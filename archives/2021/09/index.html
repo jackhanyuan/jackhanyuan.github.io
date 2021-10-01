@@ -69,10 +69,17 @@
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
+				<li><a href="/archivers/index.html">相册</a></li>
+	        
+				<li><a href="/archivers/index.html">音乐</a></li>
+	        
 			</ul>
 		</nav>
 
 		<nav class="header-smart-menu">
+			
+				<a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
+	        
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
@@ -87,11 +94,12 @@
     			
             
 		</nav>
-		
 		<nav class="header-nav">
 			<div class="social">
 				
 					<a class="github" target="_blank" href="https://github.com/jackhanyuan" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="gitee" target="_blank" href="https://gitee.com/jackhanyuan" title="gitee"><i class="icon-gitee"></i></a>
 		        
 					<a class="csdn" target="_blank" href="https://blog.csdn.net/jackhanyuan" title="csdn"><i class="icon-csdn"></i></a>
 		        
@@ -106,43 +114,48 @@
 		
 		<!-- 网易云音乐插件 -->
 		
+			<br><br>
+			<div style="position:absolute; bottom:120px left:auto; width:100%">
+				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="52" src="//music.163.com/outchain/player?type=2&id=1476239407&auto=0&height=32"></iframe>
+			</div>
+		
 			
 		<!--时钟-->
 		
-		<br>
-		<div style="position:absolute; bottom:120px left:auto; width:100%;height:50%">
-			<script type="text/javascript" src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
-			<div id="clock" style="font-family: 'Share Tech Mono', monospace;color: #ffffff;text-align: center;position: absolute;width: 150px;left: 50%;top: 50%;-webkit-transform: translate(50%, 50%);transform: translate(-50%, -50%);color: #4B8CE1;/* text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0); */">
-				<p style="margin: 0;padding: 0;letter-spacing: 0.1em;font-size: 15px;">{{ date }}</p>
-				<p style="margin: 0;padding: 0;letter-spacing: 0.01em;font-size: 25px;">{{ time }}</p>
+			<br>
+			<div style="position:absolute; bottom:120px left:auto; width:100%;height:50%">
+				<script type="text/javascript" src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+				<div id="clock" style="font-family: 'Share Tech Mono', monospace;color: #ffffff;text-align: center;position: absolute;width: 150px;left: 50%;top: 50%;-webkit-transform: translate(50%, 50%);transform: translate(-50%, -50%);color: #4B8CE1;/* text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0); */">
+					<p style="margin: 0;padding: 0;letter-spacing: 0.1em;font-size: 15px;">{{ date }}</p>
+					<p style="margin: 0;padding: 0;letter-spacing: 0.01em;font-size: 25px;">{{ time }}</p>
+				</div>
+				<script>
+					var clock = new Vue({
+						el: '#clock',
+						data: {
+							time: '',
+							date: ''
+						}
+					});
+
+					var week = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+					var timerID = setInterval(updateTime, 1000);
+					updateTime();
+					function updateTime() {
+						var cd = new Date();
+						clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
+						clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth() + 1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
+					};
+
+					function zeroPadding(num, digit) {
+						var zero = '';
+						for (var i = 0; i < digit; i++) {
+							zero += '0';
+						}
+						return (zero + num).slice(-digit);
+					}
+				</script>
 			</div>
-			<script>
-				var clock = new Vue({
-					el: '#clock',
-					data: {
-						time: '',
-						date: ''
-					}
-				});
-
-				var week = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
-				var timerID = setInterval(updateTime, 1000);
-				updateTime();
-				function updateTime() {
-					var cd = new Date();
-					clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
-					clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth() + 1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
-				};
-
-				function zeroPadding(num, digit) {
-					var zero = '';
-					for (var i = 0; i < digit; i++) {
-						zero += '0';
-					}
-					return (zero + num).slice(-digit);
-				}
-			</script>
-		</div>
 		
 				
 	</header>		
@@ -159,29 +172,24 @@
 	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
-			<div class="profilepic">
+			<a href="/" class="profilepic">
 				<img src="/img/avatar.png" class="js-avatar">
-			</div>
+			</a>
+			
 			<hgroup>
 			  <h1 class="header-author js-header-author">三水のBlog</h1>
 			</hgroup>
 			
+			
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i>计算机菜菜<i class="icon icon-quo-right"></i></p>
-			
-			
-			
-				
-			
-				
-			
-				
-			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
 						<a class="github" target="_blank" href="https://github.com/jackhanyuan" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="gitee" target="_blank" href="https://gitee.com/jackhanyuan" title="gitee"><i class="icon-gitee"></i></a>
 			        
 						<a class="csdn" target="_blank" href="https://blog.csdn.net/jackhanyuan" title="csdn"><i class="icon-csdn"></i></a>
 			        
@@ -193,17 +201,49 @@
 			        
 				</div>
 			</nav>
+			
+			
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			
+			
+			
+			
+				
+			
+			
 
 			<nav class="header-menu js-header-menu">
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/archivers/index.html">归档</a></li>
+					<li style="width: 20%"><a href="/archivers/index.html">归档</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 20%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
+					<li style="width: 20%"><a href="/archivers/index.html">相册</a></li>
+		        
+					<li style="width: 20%"><a href="/archivers/index.html">音乐</a></li>
+		        
+				</ul>
+				
+				<ul style="width: 50%">
+					
+					
+						<li style="width: 100%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					
 				</ul>
 			</nav>
 		</header>				
@@ -328,7 +368,7 @@
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
-		innerArchive: true,
+		innerArchive: false,
 		showTags: false
 	}
 </script>
