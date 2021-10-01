@@ -663,7 +663,7 @@ body {
 	position:fixed
 }
 .body-wrap {
-	margin-bottom:80px
+	margin-bottom:100px
 }
 .mid-col {
 	position:absolute;
@@ -2465,7 +2465,7 @@ to {
 	font-family:Menlo,Monaco,Andale Mono,lucida console,Courier New,monospace;
 	text-shadow:0 1px #fff;
 	position:absolute;
-	bottom:30px;
+	bottom:20px;
 	opacity:.6;
 	width:100%;
 	text-align:center

@@ -48,12 +48,16 @@
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
+	
 		<a href="/" class="profilepic">
 			<img src="/img/avatar.png" class="js-avatar">
 		</a>
+		
 		<hgroup>
-		  <h1 class="header-author"><a href="/"></a></h1>
+		  <h1 class="header-author"><a href="/">三水のBlog</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">计算机菜菜</p>
 		
 
 		<nav class="header-menu">
@@ -83,6 +87,7 @@
     			
             
 		</nav>
+		
 		<nav class="header-nav">
 			<div class="social">
 				
@@ -97,53 +102,52 @@
 					<a class="mail" target="_blank" href="mailto:jackhanyuan@foxmail.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
-			<!-- 网易云音乐插件 -->
-			
-				<div style="position:absolute; bottom:120px left:auto; width:85%">
-					<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="52" src="//music.163.com/outchain/player?type=2&id=1476239407&auto=0&height=32"></iframe>
-				</div>
-			
 		</nav>
 		
+		<!-- 网易云音乐插件 -->
 		
+			
+		<!--时钟-->
+		
+		<br>
+		<div style="position:absolute; bottom:120px left:auto; width:100%;height:50%">
+			<script type="text/javascript" src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+			<div id="clock" style="font-family: 'Share Tech Mono', monospace;color: #ffffff;text-align: center;position: absolute;width: 150px;left: 50%;top: 50%;-webkit-transform: translate(50%, 50%);transform: translate(-50%, -50%);color: #4B8CE1;/* text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0); */">
+				<p style="margin: 0;padding: 0;letter-spacing: 0.1em;font-size: 15px;">{{ date }}</p>
+				<p style="margin: 0;padding: 0;letter-spacing: 0.01em;font-size: 25px;">{{ time }}</p>
+			</div>
+			<script>
+				var clock = new Vue({
+					el: '#clock',
+					data: {
+						time: '',
+						date: ''
+					}
+				});
+
+				var week = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+				var timerID = setInterval(updateTime, 1000);
+				updateTime();
+				function updateTime() {
+					var cd = new Date();
+					clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
+					clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth() + 1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
+				};
+
+				function zeroPadding(num, digit) {
+					var zero = '';
+					for (var i = 0; i < digit; i++) {
+						zero += '0';
+					}
+					return (zero + num).slice(-digit);
+				}
+			</script>
+		</div>
+		
+				
 	</header>		
 </div>
 
-<!--时钟-->
-<br>
-<div style="position:absolute; bottom:120px left:auto; width:100%;height:50%">
-	<script type="text/javascript" src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
-  	<div id="clock" style="font-family: 'Share Tech Mono', monospace;color: #ffffff;text-align: center;position: absolute;left: 50%;top: 50%;-webkit-transform: translate(50%, 50%);transform: translate(-50%, -50%);color: #4B8CE1;text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);">
-      		<p style="margin: 0;padding: 0;letter-spacing: 0.1em;font-size: 15px;">{{ date }}</p>
-      		<p style="margin: 0;padding: 0;letter-spacing: 0.01em;font-size: 38px;">{{ time }}</p>
-  	</div>
-	<script>
-		var clock = new Vue({
-			el: '#clock',
-			data: {
-				time: '',
-				date: ''
-			}
-		});
-
-		var week = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
-		var timerID = setInterval(updateTime, 1000);
-		updateTime();
-		function updateTime() {
-			var cd = new Date();
-			clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
-			clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth() + 1, 2) + '-' + zeroPadding(cd.getDate(), 2) + week[cd.getDay()];
-		};
-
-		function zeroPadding(num, digit) {
-			var zero = '';
-			for (var i = 0; i < digit; i++) {
-				zero += '0';
-			}
-			return (zero + num).slice(-digit);
-		}
-	</script>
-</div>
 
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
@@ -159,8 +163,10 @@
 				<img src="/img/avatar.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author"></h1>
+			  <h1 class="header-author js-header-author">三水のBlog</h1>
 			</hgroup>
+			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>计算机菜菜<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -228,6 +234,35 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       	<div class="article-meta">
+	      	<a href="/2021/10/01/hello-world2/" class="archive-article-date">
+  	<time datetime="2021-09-30T17:33:25.332Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-01</time>
+</a>
+
+
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2021/10/01/hello-world2/">Hello World2</a>
+    </h1>
+  
+
+        <div class="article-info info-on-right">
+          
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
 	      	<a href="/2021/09/29/hello-world/" class="archive-article-date">
   	<time datetime="2021-09-29T15:23:18.240Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-29</time>
 </a>
@@ -262,18 +297,16 @@
         </div>
       </div>
       <footer id="footer">
-  <div class="outer">
-    <div id="footer-info">
-      本站访问量<span id="busuanzi_value_site_pv"></span>次&nbsp;
-      本站访客数<span id="busuanzi_value_site_uv"></span>人&nbsp;
-	  
+  
+  <!-- 网站运行时间 -->
+   
 	  <div>
-	  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+		<span id="timeDate">这里自动载入天数</span><span id="times">这里自动载入时分秒</span>
 	  <div>
 	  <script>
 		var now = new Date(); 
 		function createtime() { 
-			var grt= new Date("09/30/2021 00:00:00");//此处修改你的建站时间或者网站上线时间 
+			var grt= new Date('10/01/2021 00:00:00');//此处修改为网站上线时间 
 			now.setTime(now.getTime()+250); 
 			days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
 			hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
@@ -286,16 +319,32 @@
 		} 
 		setInterval("createtime()",250);
 	  </script>
-
+  
+  
+  <!-- 不蒜子统计 -->
+    
+	  本站访问量<span id="busuanzi_value_site_pv"></span>次&nbsp;
+	  <span class="post-meta-divider">|</span>
+	  本站访客数<span id="busuanzi_value_site_uv"></span>人&nbsp;
+  
+  
+  <div class="outer">
+    <div id="footer-info">
+    
       <div class="footer-left">
         &copy; 2021 三水
       </div>
+	  
       <div class="footer-right">
         <a href="http://hexo.io/" target="_blank">Hexo</a>
       </div>
+	  
     </div>
   </div>
+  
 </footer>
+
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -321,7 +370,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 
 <!--添加不蒜子统计-->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <!--添加爱心鼠标特效-->
 <script type="text/javascript">
@@ -434,26 +483,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
             缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
-<pre style="font-size: 12px;" q-show="jsonFail">
-  jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
-</pre>
+			<pre style="font-size: 12px;" q-show="jsonFail">
+			  jsonContent:
+				meta: false
+				pages: false
+				posts:
+				  title: true
+				  date: true
+				  path: true
+				  text: false
+				  raw: false
+				  content: false
+				  slug: false
+				  updated: false
+				  comments: false
+				  link: false
+				  permalink: false
+				  excerpt: false
+				  categories: false
+				  tags: true
+			</pre>
           </p>
           <li class="search-li" q-repeat="items" q-show="isShow">
             <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
@@ -506,9 +555,33 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
-  	  	
+		<div class="aboutme-wrap"> 
+			<div style="display:;color:LightSkyBlue;"> 
+				
+					<p id="hitokoto" style="margin:0 20px 0 20px;color:GreenYellow;"></p>
+					<div style="margin:0 20px 0 20px;">
+						<p id="from" style="margin:10px;text-align:right;color:Salmon;"></p>
+					</div>	
+					<script>
+						var xmlhttp = new XMLHttpRequest();
+						xmlhttp.onreadystatechange = function() {
+								if (this.readyState == 4 && this.status == 200) {
+									yiyan = JSON.parse(this.responseText);
+									document.getElementById("hitokoto").innerHTML =yiyan.hitokoto;
+								document.getElementById("from").innerHTML ="——《"+ yiyan.from+"》";
+							 }
+						};
+						xmlhttp.open("GET", "https://v1.hitokoto.cn/?c=a&c=d&c=c", true);
+						xmlhttp.send();
+					</script>
+				
+			
+				<br>
+				  
+					<p id="js-aboutme" style="margin:0 20px 0 20px;">很惭愧&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家!</p>
+				
+			</div> 
+		</div> 
     	</section>
     
   </div>
