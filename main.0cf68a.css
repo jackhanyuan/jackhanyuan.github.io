@@ -899,7 +899,7 @@ body {
 	padding-right:20px
 }
 .article-entry .highlight .gutter pre .line {
-	text-shadow:none
+	text-shadow:none;
 	color:OrangeRed
 }
 .article-entry .highlight .line {
