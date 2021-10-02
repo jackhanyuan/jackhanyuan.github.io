@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2021/10 | 三水のBlog</title>
+  <title>2-3 | 三水のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="三水的个人技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="三水のBlog">
-<meta property="og:url" content="http://example.com/archives/2021/10/index.html">
+  <meta name="description" content="2.3-1 Using Figure 2.4 as a model, illustrate the operation of merge sort on the array $A &#x3D; \langle 3, 41, 52, 26, 38, 57, 9, 49 \rangle$.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2-3">
+<meta property="og:url" content="http://example.com/2021/10/02/2.3/index.html">
 <meta property="og:site_name" content="三水のBlog">
-<meta property="og:description" content="三水的个人技术博客">
+<meta property="og:description" content="2.3-1 Using Figure 2.4 as a model, illustrate the operation of merge sort on the array $A &#x3D; \langle 3, 41, 52, 26, 38, 57, 9, 49 \rangle$.">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-10-02T11:47:53.288Z">
+<meta property="article:modified_time" content="2021-10-02T11:56:02.941Z">
 <meta property="article:author" content="三水">
-<meta property="article:tag" content="python, flask, AI, linux, html, css, git, docker">
+<meta property="article:tag" content="latex">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="三水のBlog" type="application/atom+xml">
@@ -256,38 +258,165 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-2.3" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title_code_ant" itemprop="name">
+      2-3
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/10/02/2.3/" class="archive-article-date">
+
+        
+        <a href="/2021/10/02/2.3/" class="archive-article-date">
   	<time datetime="2021-10-02T11:47:53.288Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-02</time>
 </a>
 
 
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/10/02/2.3/">2-3</a>
-    </h1>
-  
+        
+		
+		
+		<div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">1k字</span>
+      </span>
+    </span>
 
-        <div class="article-info info-on-right">
-          
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">6分</span>
+      </span>
+    </span>
+	
+
+	<span class="post-time">
+		&nbsp; | &nbsp;
+		阅读量: <span id="busuanzi_value_page_pv">次</span>
+	</span>
+</div>
+		
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="2-3-1"><a href="#2-3-1" class="headerlink" title="2.3-1"></a>2.3-1</h2><blockquote>
+<p>Using Figure 2.4 as a model, illustrate the operation of merge sort on the array $A = \langle 3, 41, 52, 26, 38, 57, 9, 49 \rangle$.</p>
+</blockquote>
+<span id="more"></span>
+<p>$$[3] \quad [41] \quad [52] \quad [26] \quad [38] \quad [57] \quad [9] \quad [49]$$</p>
+<p>$$\downarrow$$</p>
+<p>$$[3|41] \quad [26|52] \quad [38|57] \quad [9|49]$$</p>
+<p>$$\downarrow$$</p>
+<p>$$[3|26|41|52] \quad [9|38|49|57]$$</p>
+<p>$$\downarrow$$</p>
+<p>$$[3|9|26|38|41|49|52|57]$$</p>
+<h2 id="2-3-2"><a href="#2-3-2" class="headerlink" title="2.3-2"></a>2.3-2</h2><blockquote>
+<p>Rewrite the $\text{MERGE}$ procedure so that it does not use sentinels, instead stopping once either array $L$ or $R$ has had all its elements copied back to $A$ and then copying the remainder of the other array back into $A$.</p>
+</blockquote>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">MERGE</span>(A, p, q, r)</span><br><span class="line">    n1 = q - p + <span class="number">1</span></span><br><span class="line">    n2 = r - q</span><br><span class="line">    let L[<span class="number">1.</span>.n1] <span class="keyword">and</span> R[<span class="number">1.</span>.n2] be <span class="keyword">new</span> arrays</span><br><span class="line">    <span class="keyword">for</span> i = <span class="number">1</span> to n1</span><br><span class="line">        L[i] = A[p + i - <span class="number">1</span>]</span><br><span class="line">    <span class="keyword">for</span> j = <span class="number">1</span> to n2</span><br><span class="line">        R[j] = A[q + j]</span><br><span class="line">    i = <span class="number">1</span></span><br><span class="line">    j = <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> k = p to r</span><br><span class="line">        <span class="keyword">if</span> i &gt; n1</span><br><span class="line">            A[k] = R[j]</span><br><span class="line">            j = j + <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> j &gt; n2</span><br><span class="line">            A[k] = L[i]</span><br><span class="line">            i = i + <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> L[i] ≤ R[j]</span><br><span class="line">            A[k] = L[i]</span><br><span class="line">            i = i + <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            A[k] = R[j]</span><br><span class="line">            j = j + <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-3-3"><a href="#2-3-3" class="headerlink" title="2.3-3"></a>2.3-3</h2><blockquote>
+<p>Use mathematical induction to show that when $n$ is an exact power of $2$, the solution of the recurrence</p>
+<p>$$<br>T(n) =<br>\begin{cases}<br>    2             &amp; \text{if } n = 2, \\<br>    2T(n / 2) + n &amp; \text{if } n = 2^k, \text{for } k &gt; 1<br>\end{cases}<br>$$</p>
+<p>is $T(n) = n\lg n$.</p>
+</blockquote>
+<ul>
+<li><p>Base case</p>
+<p>For $n = 2^1$, $T(n) = 2\lg 2 = 2$.</p>
+</li>
+<li><p>Suppose $n = 2^k$, $T(n) = n\lg n = 2^k \lg 2^k = 2^kk$.</p>
+<p>For $n = 2^{k + 1}$,</p>
+<p>$$<br>T(n) &amp; = 2T(2^{k + 1} / 2) + 2^{k + 1} \\</p>
+<pre><code> &amp; = 2T(2^k) + 2^&#123;k + 1&#125; \\\\
+ &amp; = 2 \cdot 2^kk + 2^&#123;k + 1&#125; \\\\
+ &amp; = 2^&#123;k + 1&#125;(k + 1) \\\\
+ &amp; = 2^&#123;k + 1&#125; \lg 2^&#123;k + 1&#125; \\\\
+ &amp; = n\lg n.
+</code></pre>
+<p>$$</p>
+</li>
+</ul>
+<p>By P.M.I., $T(n) = n\lg n$, when $n$ is an exact power of $2$.</p>
+<h2 id="2-3-4"><a href="#2-3-4" class="headerlink" title="2.3-4"></a>2.3-4</h2><blockquote>
+<p>We can express insertion sort as a recursive procedure as follows. In order to sort $A[1..n]$, we recursively sort $A[1..n - 1]$ and then insert $A[n]$ into the sorted array $A[1..n - 1]$. Write a recurrence for the running time of this recursive version of insertion sort.</p>
+</blockquote>
+<p>It takes $\Theta(n)$ time in the worst case to insert $A[n]$ into the sorted array $A[1..n - 1]$. Therefore, the recurrence</p>
+<p>$$<br>T(n) = \begin{cases}<br>    \Theta(1)            &amp; \text{if } n = 1, \\<br>    T(n - 1) + \Theta(n) &amp; \text{if } n &gt; 1.<br>\end{cases}<br>$$</p>
+<p>The solution of the recurrence is $\Theta(n^2)$.</p>
+<h2 id="2-3-5"><a href="#2-3-5" class="headerlink" title="2.3-5"></a>2.3-5</h2><blockquote>
+<p>Referring back to the searching problem (see Exercise 2.1-3), observe that if the sequence $A$ is sorted, we can check the midpoint of the sequence against $v$ and eliminate half of the sequence from further consideration. The <strong><em>binary search</em></strong> algorithm repeats this procedure, halving the size of the remaining portion of the sequence each time. Write pseudocode, either iterative or recursive, for binary search. Argue that the worst-case running time of binary search is $\Theta(\lg n)$.</p>
+</blockquote>
+<ul>
+<li><p>Iterative:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ITERATIVE-BINARY-<span class="built_in">SEARCH</span>(A, v, low, high)</span><br><span class="line">    <span class="keyword">while</span> low ≤ high</span><br><span class="line">        mid = <span class="built_in">floor</span>((low + high) / <span class="number">2</span>)</span><br><span class="line">        <span class="keyword">if</span> v == A[mid]</span><br><span class="line">            <span class="keyword">return</span> mid</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> v &gt; A[mid]</span><br><span class="line">            low = mid + <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span> high = mid - <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> NIL</span><br></pre></td></tr></table></figure></li>
+<li><p>Recursive:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">RECURSIVE-BINARY-<span class="built_in">SEARCH</span>(A, v, low, high)</span><br><span class="line">    <span class="keyword">if</span> low &gt; high</span><br><span class="line">        <span class="keyword">return</span> NIL</span><br><span class="line">    mid = <span class="built_in">floor</span>((low + high) / <span class="number">2</span>)</span><br><span class="line">    <span class="keyword">if</span> v == A[mid]</span><br><span class="line">        <span class="keyword">return</span> mid</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> v &gt; A[mid]</span><br><span class="line">        <span class="keyword">return</span> RECURSIVE-BINARY-<span class="built_in">SEARCH</span>(A, v, mid + <span class="number">1</span>, high)</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> RECURSIVE-BINARY-<span class="built_in">SEARCH</span>(A, v, low, mid - <span class="number">1</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>Each time we do the comparison of $v$ with the middle element, the search range continues with range halved.</p>
+<p>The recurrence</p>
+<p>$$<br>T(n) = \begin{cases}<br>    \Theta(1)            &amp; \text{if } n = 1, \\<br>    T(n / 2) + \Theta(1) &amp; \text{if } n &gt; 1.<br>\end{cases}<br>$$</p>
+<p>The solution of the recurrence is $T(n) = \Theta(\lg n)$.</p>
+<h2 id="2-3-6"><a href="#2-3-6" class="headerlink" title="2.3-6"></a>2.3-6</h2><blockquote>
+<p>Observe that the <strong>while</strong> loop of lines 5–7 of the $\text{INSERTION-SORT}$ procedure in Section 2.1 uses a linear search to scan (backward) through the sorted subarray $A[i..j - 1]$. Can we use a binary search (see Exercise 2.3-5) instead to improve the overall worst-case running time of insertion sort to $\Theta(n\lg n)$?</p>
+</blockquote>
+<p>Each time the <strong>while</strong> loop of lines 5-7 of $\text{INSERTION-SORT}$ scans backward through the sorted array $A[1..j - 1]$. The loop not only searches for the proper place for $A[j]$, but it also moves each of the array elements that are bigger than $A[j]$ one position to the right (line 6). These movements takes $\Theta(j)$ time, which occurs when all the $j - 1$ elements preceding $A[j]$ are larger than $A[j]$. The running time of using binary search to search is $\Theta(\lg j)$, which is still dominated by the running time of moving element $\Theta(j)$.</p>
+<p>Therefore, we can’t improve the overrall worst-case running time of insertion sort to $\Theta(n\lg n)$.</p>
+<h2 id="2-3-7-star"><a href="#2-3-7-star" class="headerlink" title="2.3-7 $\star$"></a>2.3-7 $\star$</h2><blockquote>
+<p>Describe a $\Theta(n\lg n)$-time algorithm that, given a set $S$ of $n$ integers and another integer $x$, determines whether or not there exist two elements in $S$ whose sum is exactly $x$.</p>
+</blockquote>
+<p>First, sort $S$, which takes $\Theta(n\lg n)$.<br>Then, for each element $s_i$ in $S$, $i = 1, \dots, n$, search $A[i + 1..n]$ for $s_i’ = x - s_i$ by binary search, which takes $\Theta(\lg n)$.</p>
+<ul>
+<li>If $s_i’$ is found, return its position;</li>
+<li>otherwise, continue for next iteration.</li>
+</ul>
+<p>The time complexity of the algorithm is $\Theta(n\lg n) + n \cdot \Theta(\lg n) = \Theta(n\lg n)$.</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>感谢您的支持<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wechatpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -299,99 +428,119 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://sanshui.findn.cn/2021/10/02/2.3/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/10/02/1-1/" class="archive-article-date">
-  	<time datetime="2021-10-02T11:46:30.661Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-02</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/10/02/1-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">1-1</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/10/02/1-1/">1-1</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">latex</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-1"><span class="toc-number">1.</span> <span class="toc-text">2.3-1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-2"><span class="toc-number">2.</span> <span class="toc-text">2.3-2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-3"><span class="toc-number">3.</span> <span class="toc-text">2.3-3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-4"><span class="toc-number">4.</span> <span class="toc-text">2.3-4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-5"><span class="toc-number">5.</span> <span class="toc-text">2.3-5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-6"><span class="toc-number">6.</span> <span class="toc-text">2.3-6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-7-star"><span class="toc-number">7.</span> <span class="toc-text">2.3-7 $\star$</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/10/01/Markdown%E7%BC%96%E5%86%99%E6%8C%87%E5%8D%97/" class="archive-article-date">
-  	<time datetime="2021-09-30T17:08:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-01</time>
-</a>
+        
+    </div>
+</aside>
 
 
-        </div>
-    	 
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/10/01/Markdown%E7%BC%96%E5%86%99%E6%8C%87%E5%8D%97/">Markdown</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -455,8 +604,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
