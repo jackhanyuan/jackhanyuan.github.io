@@ -2476,6 +2476,9 @@ to {
 .footer-left {
 	float:left
 }
+.footer-center {
+	float:none
+}
 .footer-right {
 	float:right
 }
@@ -2489,7 +2492,7 @@ to {
 	display:block
 }
 .body-wrap {
-	margin-bottom:0
+	margin-bottom:auto
 }
 .left-col {
 	display:none
@@ -2746,14 +2749,14 @@ to {
 }
 #footer {
 	position:relative;
-	bottom:0
 }
 #footer .footer-left {
 	float:none;
-	margin-bottom:10px
+	/*margin-bottom:10px*/
 }
 #footer .footer-right {
 	float:none
+	/*margin-bottom:10px*/
 }
 #mobile-nav .header-author {
 	margin:0;
