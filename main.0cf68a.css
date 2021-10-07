@@ -276,13 +276,13 @@ progress {
 a {
 	background:transparent;
 	text-decoration:none;
-	color:#08c
+	color:#0088cc
 }
 /* 文章中的超链接,鼠标悬浮特效*/
 .article-entry a{
     display: inline-block;
     position: relative;
-    color: #0087ca;
+    color: #0088cc;
     font-family: lucida console;/* 这种字体的英文比较好看（像代码样式） */
 }
 /* 鼠标悬浮时，变色 */
@@ -1231,7 +1231,7 @@ pre .css~* .id,pre .id {
 	border:1px solid #55cff8
 }
 #header .header-nav .social a.twitter:hover {
-	border:1px solid #24c1f6
+	border:1px solid rgba(73,177,245,1.0)
 }
 #header .header-nav .social a.linkedin {
 	background:#005a87;
@@ -2178,7 +2178,7 @@ to {
 	text-align:center
 }
 .jump-container:hover .icon-back {
-	background:rgba(36,193,246,.9)
+	background:rgba(73,177,245,1.0)
 }
 .jump-container,.toc-container {
 	position:relative;
@@ -2217,8 +2217,8 @@ to {
 	display:block
 }
 .mod-side-operation__jump-to-top .icon-back:hover {
-	background:#24c1f6;
-	color:#24c1f6
+	background:rgba(73,177,245,1.0);
+	color:rgba(73,177,245,1.0)
 }
 .toc-container.tooltip-left {
 	background:#ccc;
@@ -2226,7 +2226,7 @@ to {
 	transition:.3s
 }
 .toc-container.tooltip-left:hover {
-	background:rgba(36,193,246,.9)
+	background:rgba(73,177,245,1.0)
 }
 .toc-container.tooltip-left .icon-font {
 	font-size:22px;
@@ -2287,7 +2287,7 @@ to {
 	right:10px
 }
 .tooltip-left .tooltip:hover a.share-outer {
-	background:#24c1f6
+	background:rgba(73,177,245,1.0)
 }
 @-webkit-keyframes pulse {
 	0% {
@@ -2307,7 +2307,7 @@ to {
 }
 }.tooltip-left .tooltip-content {
 	position:absolute;
-	background:rgba(36,193,246,.9);
+	background:rgba(73,177,245,1.0);
 	z-index:9999;
 	width:200px;
 	bottom:50%;
@@ -2433,7 +2433,7 @@ to {
 	transform:scaleX(1)
 }
 .tooltip-top .tooltip-inner {
-	background:rgba(36,193,246,.9);
+	background:rgba(73,177,245,1.0);
 	padding:40px;
 	-webkit-transform:translate3d(0,100%,0);
 	transform:translate3d(0,100%,0);
