@@ -592,7 +592,7 @@ i {
     content:"码"
 }
 .icon-csdn:before {
-    content:"C"
+    content: "C"
 }
 .icon-steam:before {
 	content:"\F1B6"
@@ -2675,7 +2675,7 @@ to {
 .article-header {
 	border-left:none;
 	padding:0;
-	border-bottom:1px dotted #ddd
+	/* border-bottom:1px dotted #ddd */
 }
 .article-header h1 {
 	margin-bottom:10px
@@ -3652,7 +3652,7 @@ to {
 /*版权声明的样式*/
 .declare {
     background-color: #f6f6f6;
-    margin-top: 60px;
+    margin-top: 30px;
     border-left: 5px solid #f44336;
     padding: .5em 1em;
 	word-break: break-all;
