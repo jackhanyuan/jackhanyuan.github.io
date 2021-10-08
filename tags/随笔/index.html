@@ -39,6 +39,7 @@
     
   <!-- 引入font-awesome图标库 -->
   <!-- <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
 <!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
@@ -75,8 +76,6 @@
 	        
 				<li><a href="/categories">分类</a></li>
 	        
-				<li><a href="/photos">相册</a></li>
-	        
 				<li><a href="/music/">音乐</a></li>
 	        
 				<li><a href="/tags">tags</a></li>
@@ -107,17 +106,11 @@
 				
 					<a class="github" target="_blank" href="https://github.com/jackhanyuan" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="gitee" target="_blank" href="https://gitee.com/jackhanyuan" title="gitee"><i class="icon-gitee"></i></a>
-		        
 					<a class="csdn" target="_blank" href="https://blog.csdn.net/jackhanyuan" title="csdn"><i class="icon-csdn"></i></a>
 		        
 					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 		        
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/hanyuanyuan" title="zhihu"><i class="icon-zhihu"></i></a>
-		        
-					<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
-		        
-					<a class="jianshu" target="_blank" href="#" title="jianshu"><i class="icon-jianshu"></i></a>
 		        
 					<a class="mail" target="_blank" href="mailto:jackhanyuan@foxmail.com" title="mail"><i class="icon-mail"></i></a>
 		        
@@ -201,17 +194,11 @@
 					
 						<a class="github" target="_blank" href="https://github.com/jackhanyuan" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="gitee" target="_blank" href="https://gitee.com/jackhanyuan" title="gitee"><i class="icon-gitee"></i></a>
-			        
 						<a class="csdn" target="_blank" href="https://blog.csdn.net/jackhanyuan" title="csdn"><i class="icon-csdn"></i></a>
 			        
 						<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/hanyuanyuan" title="zhihu"><i class="icon-zhihu"></i></a>
-			        
-						<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
-			        
-						<a class="jianshu" target="_blank" href="#" title="jianshu"><i class="icon-jianshu"></i></a>
 			        
 						<a class="mail" target="_blank" href="mailto:jackhanyuan@foxmail.com" title="mail"><i class="icon-mail"></i></a>
 			        
@@ -220,8 +207,6 @@
 			
 			
 			
-			
-				
 			
 				
 			
@@ -242,20 +227,18 @@
 				<ul style="width: 85%">
 					
 					
-						<li style="width: 14.285714285714286%"><a href="/">主页</a></li>
+						<li style="width: 16.666666666666668%"><a href="/">主页</a></li>
 					
-						<li style="width: 14.285714285714286%"><a href="/archives">归档</a></li>
+						<li style="width: 16.666666666666668%"><a href="/archives">归档</a></li>
 					
-						<li style="width: 14.285714285714286%"><a href="/categories">分类</a></li>
+						<li style="width: 16.666666666666668%"><a href="/categories">分类</a></li>
 					
-						<li style="width: 14.285714285714286%"><a href="/photos">相册</a></li>
+						<li style="width: 16.666666666666668%"><a href="/music/">音乐</a></li>
 					
-						<li style="width: 14.285714285714286%"><a href="/music/">音乐</a></li>
-					
-						<li style="width: 14.285714285714286%"><a href="/tags">tags</a></li>
+						<li style="width: 16.666666666666668%"><a href="/tags">tags</a></li>
 					
 					
-						<li style="width: 14.285714285714286%"><a href="/tags/markdown/">随笔</a></li>
+						<li style="width: 16.666666666666668%"><a href="/tags/markdown/">随笔</a></li>
 					
 				</ul>	
 			</nav>
@@ -289,7 +272,13 @@
     <header class="archive-article-header">
       	<div class="article-meta">
 	      	<a href="/post/f514bda9.html" class="archive-article-date">
-  	<time datetime="2021-10-02T17:44:28.799Z" itemprop="datePublished"><!-- <i class="icon-calendar icon"></i> --><i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;2021-10-03</time>
+  	<time datetime="2021-10-02T17:44:28.799Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2021-10-03</time>
+	
+	
 </a>
 
 
@@ -538,7 +527,7 @@ MathJax.Hub.Queue(function() {
     
     	<section class="tools-section tools-section-all" q-show="innerArchive">
         <div class="search-wrap">
-          <input class="search-ipt" q-model="search" type="text" placeholder="没看到想要的？搜一下">
+          <input class="search-ipt" q-model="search" type="text" placeholder="搜一搜">
           <i class="icon-search icon" q-show="search|isEmptyStr"></i>
           <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
         </div>
@@ -754,5 +743,5 @@ MathJax.Hub.Queue(function() {
 <script type="text/javascript" src="/clipboard_use.js"></script>
 <!-- 代码块复制功能结束 -->
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":0.6,"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"superSample":2,"position":"left","width":145,"height":320,"hOffset":200,"vOffset":-100},"dialog":{"enable":false,"hitokoto":false},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.7},"log":false});</script></body>
+</body>
 </html>
