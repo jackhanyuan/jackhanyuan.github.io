@@ -2661,7 +2661,7 @@ to {
 	width:42px;
 	height:42px;
 	text-align:center;
-	line-height:50px
+	line-height:60px
 }
 .btnctn .slider-trigger.back {
 	top:0;
@@ -2680,7 +2680,7 @@ to {
 }
 .left-icon-container{
 	width: 40px;
-	height: 40px;
+	height: 50px;
 	background: #49b1f5;
 }
 .article-header {
@@ -2940,7 +2940,7 @@ to {
 	text-overflow:ellipsis;
 	white-space:nowrap;
 	display:block;
-	color:#a0a0a0
+	/*color:#a0a0a0*/
 }
 .header-menu li a.active {
 	color:#fff;
