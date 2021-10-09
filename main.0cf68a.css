@@ -2940,11 +2940,13 @@ to {
 	text-overflow:ellipsis;
 	white-space:nowrap;
 	display:block;
-	/*color:#a0a0a0*/
+	color:#0088cc;
+	/*color:#a0a0a0;*/
 }
 .header-menu li a.active {
 	/*color:#fff;
 	background:#a0a0a0*/
+	color:#fff;
 	background: #49B1F5;
 }
 .profilepic {
