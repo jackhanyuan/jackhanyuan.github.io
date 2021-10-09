@@ -276,7 +276,7 @@ progress {
 a {
 	background:transparent;
 	text-decoration:none;
-	color:#0088cc
+	color:#0088cc;
 }
 /* 文章中的超链接,鼠标悬浮特效*/
 .article-entry a{
@@ -1844,7 +1844,7 @@ to {
 	float:right
 }
 .article-more-link a {
-	background:#4d4d4d;
+	background:#0088cc;
 	color:#fff;
 	font-size:12px;
 	padding:5px 8px;
@@ -1853,7 +1853,8 @@ to {
 	transition:background .3s
 }
 .article-more-link a:hover {
-	background:#3c3c3c
+	/*background:#3c3c3c;*/
+	background:#0088cc;
 }
 .article-more-link a.hidden {
 	visibility:hidden
@@ -2671,7 +2672,7 @@ to {
 	left:0
 }
 .btnctn .slider-trigger:hover {
-	background:#444
+	/*background:#444*/
 }
 .btnctn .slider-trigger .icon {
 	font-size:24px;
@@ -2870,7 +2871,7 @@ to {
 	color:#424242
 }
 #mobile-nav .overlay {
-	height:110px;
+	height:100px;
 	position:absolute;
 	width:100%;
 	z-index:2;
