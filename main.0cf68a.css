@@ -1099,7 +1099,7 @@ pre .css~* .id,pre .id {
 	float:left
 }
 .archive-article-date {
-	color:#999;
+	/*color:#999;*/
 	margin-right:7.6923%;
 	float:right
 }
@@ -1817,9 +1817,9 @@ to {
 	transition:color .3s
 }
 .article-header {
-	border-left:5px solid #4d4d4d;
-	padding:30px 0 15px 25px;
-	padding-left:7.6923%
+	border-left:5px solid #0088CC;
+	padding:25px 0px 15px 25px;
+	padding-left:7.2923%
 }
 .article-meta {
 	width:150px;
@@ -2141,7 +2141,7 @@ to {
 	top:24%;
 	left:50%;
 	z-index:1001;
-	padding:20px;
+	padding:30px;
 	text-align:center;
 	color:#727272;
 	background:#fff;
@@ -2242,7 +2242,7 @@ to {
 .page-reward .reward-type {
 	font-size:16px;
 	display:block;
-	color:#4d4d4d;
+	color:#fff;
 	margin:20px 0 0
 }
 .page-reward .reward-img {
@@ -2280,7 +2280,7 @@ to {
 	cursor:pointer;
 	width:40px;
 	height:40px;
-	opacity:.8
+	/*opacity:.8*/
 }
 .jump-plan-container {
 	position:absolute;
@@ -2302,7 +2302,7 @@ to {
 .mod-side-operation__jump-to-top .icon-back {
 	transition:.3s;
 	color:#fff;
-	background:#ccc;
+	background:#49b1f5;
 	-webkit-transform:rotate(90deg);
 	transform:rotate(90deg);
 	font-size:32px;
@@ -2316,7 +2316,7 @@ to {
 	color:rgba(73,177,245,1.0)
 }
 .toc-container.tooltip-left {
-	background:#ccc;
+	background:#49b1f5;
 	margin-top:10px;
 	transition:.3s
 }
@@ -2337,9 +2337,10 @@ to {
 .toc-container.tooltip-left .tooltip-east .tooltip-content {
 	min-height:100px;
 	text-align:left;
-	padding:5px 0 5px 20px;
+	padding:15px 5px 5px 25px;
 	right:4.7em;
 	min-width:200px;
+	max-width: 500px;
 	width:auto;
 	font-size:14px;
 	text-shadow:1px 1px 1px #398199;
@@ -2359,7 +2360,8 @@ to {
 .toc-container.tooltip-left .tooltip-east .tooltip-content .toc-article {
 	max-height:500px;
 	overflow-x:hidden;
-	overflow-y:auto
+	overflow-y:auto;
+	margin: 5px 20px 5px 5px;
 }
 .toc-container.tooltip-left .tooltip-east .tooltip-content .toc-article li ol,.toc-container.tooltip-left .tooltip-east .tooltip-content .toc-article li ul {
 	margin-left:30px
@@ -2402,7 +2404,8 @@ to {
 }
 }.tooltip-left .tooltip-content {
 	position:absolute;
-	background:rgba(73,177,245,1.0);
+	/*background:rgba(73,177,245,1.0);*/
+	background:-webkit-linear-gradient(55deg,#88ACDB,#49B1F5,#9534f1,#49b1f5);
 	z-index:9999;
 	width:200px;
 	bottom:50%;
@@ -2599,7 +2602,9 @@ to {
 	position:relative
 }
 .wrap-side-operation {
-	display:none
+	/*显示手机端目录*/
+	/*display:none;*/
+	right: 0px;
 }
 .cloud-tie-wrapper {
 	padding:0;
@@ -2662,7 +2667,7 @@ to {
 	left:0
 }
 .btnctn .slider-trigger.list {
-	bottom:0;
+	/*bottom:0;*/
 	left:0
 }
 .btnctn .slider-trigger:hover {
@@ -2671,6 +2676,11 @@ to {
 .btnctn .slider-trigger .icon {
 	font-size:24px;
 	color:#fff
+}
+.left-icon-container{
+	width: 40px;
+	height: 40px;
+	background: #49b1f5;
 }
 .article-header {
 	border-left:none;
@@ -2895,7 +2905,7 @@ to {
 	color:#fff
 }
 .header-menu.tools-nav li a.active,.header-menu.tools-nav ul a.active {
-	background:#81b5cc
+	background:#49B1F5;
 }
 .header-menu ul {
 	text-align:center;
@@ -2932,7 +2942,7 @@ to {
 	color:#a0a0a0
 }
 .header-menu li a.active {
-	color:#eaeaea;
+	color:#fff;
 	background:#a0a0a0
 }
 .profilepic {
@@ -3503,7 +3513,7 @@ to {
 	text-decoration:underline
 }
 .article-inner h1.article-title_code_ant,.article-title_code_ant {
-	color:#191970;
+	color:#0088CC;
 	margin-left:0;
 	font-weight:300;
 	line-height:35px;
@@ -3699,6 +3709,12 @@ to {
     opacity: 1;
 }
 
+/*手机端目录调整*/
+@media screen and (max-width:800px) {
+	.toc-container.tooltip-left .tooltip-east .tooltip-content {
+    max-width: 300px;
+   }
+}
 
 
 

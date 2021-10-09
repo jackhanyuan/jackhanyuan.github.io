@@ -29,7 +29,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(200deg,#ccc,#000);
+      background: -webkit-linear-gradient(55deg,#88ACDB,#49B1F5,#9534f1,#49b1f5);
     }
   </style>
   
@@ -52,7 +52,7 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay" style="background: -webkit-linear-gradient(55deg,#88ACDB,#49B1F5,#9534f1,#49b1f5)"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 	
@@ -171,9 +171,12 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: -webkit-linear-gradient(55deg,#88ACDB,#49B1F5,#9534f1,#49b1f5)"></div>
 	<div class="btnctn js-mobile-btnctn">
-  		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
+  		<div class="slider-trigger list" q-on="click: openSlider(e)">
+		<div class="left-icon-container">
+			<i class="icon icon-sort"></i></div>
+		</div>
 	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
@@ -224,7 +227,7 @@
 			
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 85%">
+				<ul style="width: 80%">
 					
 					
 						<li style="width: 16.666666666666668%"><a href="/">主页</a></li>
@@ -269,6 +272,7 @@
         <a href="/music/index.html" class="archive-article-date">
   	<time datetime="2021-10-07T14:04:57.055Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
+	&nbsp;&nbsp;&nbsp;
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
 	2021-10-07</time>
@@ -276,7 +280,7 @@
 	
 	<!-- 不蒜子统计 -->
 	<span class="post-time">
-		&nbsp; &nbsp; &nbsp; &nbsp;
+		&nbsp; &nbsp; &nbsp;
 		<i class="fa fa-eye" aria-hidden="true"></i>
 		<!-- <span class="post-meta-item-text">阅读量:</span>-->
 		&nbsp;
@@ -538,9 +542,7 @@ MathJax.Hub.Queue(function() {
 </script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
-</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 
