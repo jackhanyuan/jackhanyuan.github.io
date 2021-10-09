@@ -6,7 +6,7 @@
   <link href="https://sanshui.findn.cn/atom.xml" rel="self"/>
   
   <link href="https://sanshui.findn.cn/"/>
-  <updated>2021-10-08T13:03:35.714Z</updated>
+  <updated>2021-10-09T13:07:50.621Z</updated>
   <id>https://sanshui.findn.cn/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图床测试</title>
+    <link href="https://sanshui.findn.cn/post/f672cc4e.html"/>
+    <id>https://sanshui.findn.cn/post/f672cc4e.html</id>
+    <published>2021-10-09T12:48:55.852Z</published>
+    <updated>2021-10-09T13:07:50.621Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="我的图床"><a href="#我的图床" class="headerlink" title="我的图床"></a>我的图床</h1><h1 id="github"><a href="#github" class="headerlink" title="github"></a>github</h1><p><img src="https://raw.githubusercontent.com/jackhanyuan/sanshui-pic/main/blog/favicon.png?token=AF6SHDQCUSSPE7KUQY2JTGLBMGGO6"></p><p><img src="https://raw.githubusercontent.com/jackhanyuan/sanshui-pic/main/blog/happy_appple_face.png?token=AF6SHDXZIQFLL5BRT3ZZDWDBMGJLG"></p><p><img src="https://raw.githubusercontent.com/jackhanyuan/sanshui-pic/main/blog/%E5%A4%B4%E5%83%8F2.jpg"></p><h2 id="七牛云"><a href="#七牛云" class="headerlink" title="七牛云"></a>七牛云</h2><p><img src="http://qiniu.findn.cn/blog/favicon.png"></p><p><img src="http://qiniu.findn.cn/blog/happy_appple_face.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;我的图床&quot;&gt;&lt;a href=&quot;#我的图床&quot; class=&quot;headerlink&quot; title=&quot;我的图床&quot;&gt;&lt;/a&gt;我的图床&lt;/h1&gt;&lt;h1 id=&quot;github&quot;&gt;&lt;a href=&quot;#github&quot; class=&quot;headerlink&quot; title=&quot;githu</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>6.4</title>
