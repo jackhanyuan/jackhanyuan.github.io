@@ -3677,6 +3677,9 @@ to {
 .mjx-chtml {
     overflow: auto;
 }
+.MathJax_Display {
+	overflow: auto;
+}
 
 /* 代码复制按钮 */
 .btn-copy {
