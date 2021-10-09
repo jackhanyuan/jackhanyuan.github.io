@@ -2661,7 +2661,7 @@ to {
 	width:42px;
 	height:42px;
 	text-align:center;
-	line-height:60px
+	line-height:50px
 }
 .btnctn .slider-trigger.back {
 	top:0;
@@ -2680,7 +2680,7 @@ to {
 }
 .left-icon-container{
 	width: 40px;
-	height: 50px;
+	height: 40px;
 	background: #49b1f5;
 }
 .article-header {
@@ -2943,8 +2943,9 @@ to {
 	/*color:#a0a0a0*/
 }
 .header-menu li a.active {
-	color:#fff;
-	background:#a0a0a0
+	/*color:#fff;
+	background:#a0a0a0*/
+	background: #49B1F5;
 }
 .profilepic {
 	display:block;
