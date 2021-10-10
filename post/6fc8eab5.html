@@ -26,7 +26,7 @@
 <meta property="og:image" content="https://pandao.github.io/editor.md/examples/images/8.jpg">
 <meta property="og:image" content="https://pandao.github.io/editor.md/examples/images/7.jpg">
 <meta property="article:published_time" content="2021-09-30T17:08:03.000Z">
-<meta property="article:modified_time" content="2021-10-08T15:23:33.286Z">
+<meta property="article:modified_time" content="2021-10-08T13:03:35.749Z">
 <meta property="article:author" content="三水">
 <meta property="article:tag" content="markdown">
 <meta name="twitter:card" content="summary">
@@ -61,6 +61,7 @@
 </head>
 
 <body>
+
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
@@ -143,44 +144,46 @@
 			
 		<!--时钟-->
 		
-			<br>
-			<div style="position:absolute; bottom:120px left:auto; width:100%;height:50%">
-				<script type="text/javascript" src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
-				<div id="clock" style="font-family: 'Share Tech Mono', monospace;color: #ffffff;text-align: center;position: absolute;width: 250px;left: 50%;top: 50%;-webkit-transform: translate(50%, 50%);transform: translate(-50%, -50%);color: #4B8CE1;/* text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0); */">
-					<p style="margin: 0;padding: 0;letter-spacing: 0.1em;font-size: 15px;">{{ date }}</p>
-					<p style="margin: 0;padding: 0;letter-spacing: 0.01em;font-size: 25px;">{{ time }}</p>
-				</div>
-				<script>
-					var clock = new Vue({
-						el: '#clock',
-						data: {
-							time: '',
-							date: ''
-						}
-					});
+			<!--时钟-->
+<br>
+<div style="position:absolute; bottom:120px left:auto; width:100%;height:50%">
+	<script type="text/javascript" src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+	<div id="clock" style="font-family: 'Share Tech Mono', monospace;color: #ffffff;text-align: center;position: absolute;width: 250px;left: 50%;top: 50%;-webkit-transform: translate(50%, 50%);transform: translate(-50%, -50%);color: #4B8CE1;/* text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0); */">
+		<p style="margin: 0;padding: 0;letter-spacing: 0.1em;font-size: 15px;">{{ date }}</p>
+		<p style="margin: 0;padding: 0;letter-spacing: 0.01em;font-size: 25px;">{{ time }}</p>
+	</div>
+	<script>
+		var clock = new Vue({
+			el: '#clock',
+			data: {
+				time: '',
+				date: ''
+			}
+		});
 
-					var week = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
-					var timerID = setInterval(updateTime, 1000);
-					updateTime();
-					function updateTime() {
-						var cd = new Date();
-						clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
-						clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth() + 1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
-					};
+		var week = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+		var timerID = setInterval(updateTime, 1000);
+		updateTime();
+		function updateTime() {
+			var cd = new Date();
+			clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
+			clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth() + 1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
+		};
 
-					function zeroPadding(num, digit) {
-						var zero = '';
-						for (var i = 0; i < digit; i++) {
-							zero += '0';
-						}
-						return (zero + num).slice(-digit);
-					}
-				</script>
-			</div>
+		function zeroPadding(num, digit) {
+			var zero = '';
+			for (var i = 0; i < digit; i++) {
+				zero += '0';
+			}
+			return (zero + num).slice(-digit);
+		}
+	</script>
+</div>
 		
-				
+
 	</header>		
 </div>
+
 
 
     </div>
@@ -272,7 +275,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Markdown编写指南" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Markdown编写指南 - 副本" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -324,15 +327,6 @@
 		
 		<div style="margin-top:10px;margin-bottom:15px;">
 	
-      
-        <span class="article-type" style="
-          color: white;
-          font-size: 14px;
-          background: #0088CC;
-          padding: 0 5px 1px 5px;
-          margin-right: 5px;
-          border-radius: 2px;">原创</span>
-		  &nbsp; 
       
     
 	
@@ -647,7 +641,7 @@
 	
 	<br>
 	<strong class="update-time">最后更新：</strong>
-	2021年10月08日 23:23:33
+	2021年10月08日 21:03:35
 	
 	<!-- <br>
 	<strong class="article-titles">本文标题：</strong>
@@ -703,11 +697,6 @@
       
     </div>
     <div class="article-info article-info-index">
-      
-        <div class="article-pop-out tagcloud">
-          <i class="icon-tuding"></i>
-          <a class="article-tag-list-link color3">置顶</a>
-        </div>
       
 	  
       
@@ -1332,11 +1321,45 @@ MathJax.Hub.Queue(function() {
 </div>
   </div>
   
-<!-- 代码块复制功能 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.js"></script>
-<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src="/clipboard_use.js"></script>
-<!-- 代码块复制功能结束 -->
+  <!--全局添加 aplayer播放器 https://aplayer.js.org/#/zh-Hans/ -->
+  
+    <!-- 添加APlayer音乐播放器,详见: https://aplayer.js.org/#/zh-Hans/ -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+	
+	<!-- 列表左对齐 并显示在最上面一层 -->
+    <div id="aplayer" style="text-align:left;z-index: 99999;">
+	
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
+
+    <!-- 为方便修改，添加一个配置文件，修改时直接修改配置文件即可。 -->
+	<script type="text/javascript" src="/js/aplayer_config.js"></script>
+
+    <!-- 根据封面自适应主题色，主要是作用于进度条 -->
+    <script type="text/javascript">
+          const colorThief = new ColorThief();
+          const setTheme = (index) => {
+            if (!ap.list.audios[index].theme) {
+              colorThief.getColorAsync(ap.list.audios[index].cover, function(color) {
+                ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+              });
+            }
+          };
+          setTheme(ap.list.index);
+          ap.on('listswitch', (data) => {
+            setTheme(data.index);
+          });
+    </script>
+
+<!-- 添加--APlayer音乐播放器 -->
+  
+
+  <!-- 代码块复制功能 -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.js"></script>
+  <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/clipboard_use.js"></script>
+  <!-- 代码块复制功能结束 -->
 
 </body>
 </html>

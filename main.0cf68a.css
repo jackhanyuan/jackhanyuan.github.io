@@ -3732,10 +3732,12 @@ to {
 	}
 	.toc-container.tooltip-left .tooltip-east .tooltip-content {
     max-width: 300px;
-   }
+    }
+   .aplayer {
+        opacity:1.0;
+		/*播放器透明度*/
+    }
 }
-
-
 
 
 
