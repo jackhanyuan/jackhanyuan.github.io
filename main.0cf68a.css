@@ -699,7 +699,7 @@ body {
 	position:absolute;
 	right:0;
 	min-height:100%;
-	background:#eaeaea;
+	/*background:#eaeaea;*/
 	left:300px;
 	width:auto
 }
@@ -1417,11 +1417,11 @@ pre .css~* .id,pre .id {
 	background:#5e5e5e
 }
 #page-nav .current {
-	background:#88acdb;
+	background:#0088cc;
 	cursor:default
 }
 #page-nav .current:hover {
-	background:#88acdb
+	background:#0088cc;
 }
 #page-nav .extend {
 	color:#4d4d4d;
@@ -1844,7 +1844,7 @@ to {
 	float:right
 }
 .article-more-link a {
-	background:#0088cc;
+	background:linear-gradient(45deg, #2196f3, #c974f5);
 	color:#fff;
 	font-size:12px;
 	padding:5px 8px;
@@ -2879,7 +2879,7 @@ to {
 	position:absolute;
 	width:100%;
 	z-index:2;
-	background:#4d4d4d
+	/*background:#4d4d4d*/
 }
 #mobile-nav #header {
 	padding:10px 0 0
@@ -2926,11 +2926,11 @@ to {
 	justify-content:space-around;
 	position:relative;
 	z-index:1;
-	border:1px solid #a0a0a0;
+	border:1px solid #fff;
 	border-radius:3px
 }
 .header-menu li {
-	border-left:1px solid #a0a0a0
+	border-left:1px solid #fff
 }
 .header-menu li:first-child {
 	border-left:0
@@ -2944,7 +2944,7 @@ to {
 	text-overflow:ellipsis;
 	white-space:nowrap;
 	display:block;
-	color:#0088cc;
+	color:#fff;
 	/*color:#a0a0a0;*/
 }
 .header-menu li a.active {
@@ -3720,8 +3720,17 @@ to {
     opacity: 1;
 }
 
-/*手机端目录调整*/
+/*手机端样式调整*/
 @media screen and (max-width:800px) {
+	body {
+	background: -webkit-linear-gradient(55deg,#88ACDB,#49B1F5,#9534f1,#49b1f5);
+	}
+	a {
+    color: #fff;
+	}
+	.mid-col {
+    background: -webkit-linear-gradient(55deg,#88ACDB,#49B1F5,#9534f1,#49b1f5);
+	}
 	.toc-container.tooltip-left .tooltip-east .tooltip-content {
     max-width: 300px;
    }
