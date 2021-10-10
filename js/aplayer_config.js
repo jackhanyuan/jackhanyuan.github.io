@@ -192,5 +192,20 @@ const ap = new APlayer({
             cover: 'http://imge.kugou.com/stdmusic/150/20150720/20150720192351939143.jpg',
             url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E3%81%84%E3%81%A4%E3%82%82%E4%BD%95%E5%BA%A6%E3%81%A7%E3%82%82%20-%20%E5%AE%97%E6%AC%A1%E9%83%8E.mp3'
                   }
-        ]
+        ],
+		customAudioType: {
+			'customHls': function (audioElement, audio, player) {
+				if (Hls.isSupported()) {
+					const hls = new Hls();
+					hls.loadSource(audio.url);
+					hls.attachMedia(audioElement);
+				}
+				else if (audioElement.canPlayType('application/x-mpegURL') || audioElement.canPlayType('application/vnd.apple.mpegURL')) {
+					audioElement.src = audio.url;
+				}
+				else {
+					player.notice('Error: HLS is not supported.');
+				}
+			}
+       }  
 });
