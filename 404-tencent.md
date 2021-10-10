@@ -2,6 +2,7 @@
 title: 404 Not Found：该页无法显示
 abbrlink: 404
 no_word_count: true
+no_date: true
 no_declare: true
 no_toc: true
 no_reward: true

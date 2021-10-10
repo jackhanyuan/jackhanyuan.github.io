@@ -1456,9 +1456,10 @@ pre .css~* .id,pre .id {
 	z-index:1
 }
 .archives-wrap .archive-year-wrap a {
-	color:#666;
+	color:#0088cc;
 	font-weight:700;
 	padding-left:48px
+	font-size: 30px;
 }
 .archives {
 	position:relative
@@ -2726,8 +2727,8 @@ to {
 	margin:6px 4px 0 0
 }
 .article {
-	padding:10px;
-	margin:10px 0;
+	padding:30px;
+	margin:30px 0;
 	border:0;
 	font-size:16px;
 	color:#555
@@ -2832,8 +2833,8 @@ to {
 	float:none
 }
 .archives-wrap {
-	margin:10px 10px 0;
-	padding:10px
+	margin:0px 0px;
+	padding:30px
 }
 .archives-wrap .archive-article-title {
 	font-size:16px
