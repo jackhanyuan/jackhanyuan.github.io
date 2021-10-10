@@ -1437,7 +1437,7 @@ pre .css~* .id,pre .id {
 .archives-wrap {
 	position:relative;
 	margin:0 30px;
-	padding-right:60px;
+	padding-left: 35px;
 	border-bottom:1px solid #eee;
 	background:#fff
 }
@@ -1448,27 +1448,29 @@ pre .css~* .id,pre .id {
 	margin-bottom:80px
 }
 .archives-wrap .archive-year-wrap {
-	line-height:35px;
-	width:200px;
-	position:absolute;
-	padding-top:15px;
-	font-size:1.8em;
-	z-index:1
+    line-height: 35px;
+    position: absolute;
+    padding: 35px 40px 40px 0px;
+    padding-left: 5%;
+    font-size: 1.8em;
+    z-index: 1;
 }
 .archives-wrap .archive-year-wrap a {
 	color:#0088cc;
-	font-weight:700;
-	padding-left:48px
+	font-weight:300;
 	font-size: 30px;
 }
 .archives {
-	position:relative
+    position: relative;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 70px;
+    padding-bottom: 30px;
 }
 .archives .article-info {
 	border:none
 }
 .archives .archive-article {
-	margin-left:200px;
 	padding:20px 0;
 	border-bottom:1px solid #eee;
 	border-top:1px solid #fff;
@@ -2834,14 +2836,12 @@ to {
 }
 .archives-wrap {
 	margin:0px 0px;
-	padding:30px
 }
 .archives-wrap .archive-article-title {
 	font-size:16px
 }
 .archives-wrap .archive-year-wrap {
-	position:relative;
-	padding:0
+	
 }
 .archives-wrap .archive-year-wrap a {
 	padding:0
