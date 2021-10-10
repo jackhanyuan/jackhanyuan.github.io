@@ -1980,7 +1980,7 @@ to {
 }
 .article-entry ol li:before {
 	counter-increment:item;
-	content:counter(item) ".";
+	/*content:counter(item) ".";*/
 	margin-right:10px
 }
 .article-entry ol,.article-entry ul {
