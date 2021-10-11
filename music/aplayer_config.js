@@ -1,5 +1,5 @@
-const ap1 = new APlayer({
-	// 这里新建了一个播放器ap1 如果命名为ap则与全局的播放器ap不能共存，只会同时出现一个
+const ap = new APlayer({
+	// 这里命名ap, 与全局音乐播放器ap名称一样 所以在/music页面只出现一个播放器 ; 如果需要同时出现 请命名ap1
     container: document.getElementById('aplayer2'),
 	// mini: false,
     //fixed: true,//吸底模式
@@ -17,13 +17,12 @@ const ap1 = new APlayer({
 	//网易云默认外链链接：http://music.163.com/song/media/outer/url?id=ID数字.mp3
 
     audio: [{
-            name: '风铃',
+            name: '一直很安静',
             artist: '阿桑',
             lrc: '/music/lrc/一直很安静 - 阿桑.lrc',
             cover: 'https://p1.music.126.net/SpovasHBud2A1qXXADXsBg==/109951163167455610.jpg?param=300x300',
-            //url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/一直很安静 - 阿桑.mp3',
-			url: 'https://music.163.com/song/media/outer/url?id=1390480881.mp3',
-			theme: '',
+            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/一直很安静 - 阿桑.mp3',
+			theme: 'red',
 			type: '',
                   },
         {
