@@ -2259,7 +2259,7 @@ to {
 	position:fixed;
 	right:40px;
 	bottom:50px;
-	z-index:999;
+	z-index:99999;
 	font-size:14px
 }
 .wrap-side-operation .icon-plane {
@@ -2612,6 +2612,7 @@ to {
 	/*显示手机端目录*/
 	/*display:none;*/
 	right: 0px;
+	z-index: 99999;
 }
 .cloud-tie-wrapper {
 	padding:0;

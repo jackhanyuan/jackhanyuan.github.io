@@ -169,6 +169,10 @@
 	</script>
 </div>
 		
+		
+		  <!--全局添加 aplayer播放器 https://aplayer.js.org/#/zh-Hans/ -->
+		  
+		  <!-- aplayer播放器功能结束 -->
 
 	</header>		
 </div>
@@ -877,47 +881,13 @@ MathJax.Hub.Queue(function() {
 </div>
   </div>
   
-  <!--全局添加 aplayer播放器 https://aplayer.js.org/#/zh-Hans/ -->
-  
-    <!-- 添加APlayer音乐播放器,详见: https://aplayer.js.org/#/zh-Hans/ -->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-	
-	<!-- 列表左对齐 并显示在最上面一层 -->
-    <div id="aplayer" style="text-align:left;z-index: 99999;">
-	
-	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
-
-    <!-- 为方便修改，添加一个配置文件，修改时直接修改配置文件即可。 -->
-	<script type="text/javascript" src="/js/aplayer_config.js"></script>
-
-    <!-- 根据封面自适应主题色，主要是作用于进度条 -->
-    <script type="text/javascript">
-          const colorThief = new ColorThief();
-          const setTheme = (index) => {
-            if (!ap.list.audios[index].theme) {
-              colorThief.getColorAsync(ap.list.audios[index].cover, function(color) {
-                ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
-              });
-            }
-          };
-          setTheme(ap.list.index);
-          ap.on('listswitch', (data) => {
-            setTheme(data.index);
-          });
-    </script>
-
-<!-- APlayer音乐播放器功能结束 -->
-  
-  <!-- aplayer播放器功能结束 -->
-
   <!-- 代码块复制功能 -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.js"></script>
   <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="/js/clipboard_use.js"></script>
   <!-- 代码块复制功能结束 -->
+  
+
 
 </body>
 </html>
