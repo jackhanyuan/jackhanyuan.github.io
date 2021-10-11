@@ -693,7 +693,7 @@ body {
 	position:fixed
 }
 .body-wrap {
-	margin-bottom:100px
+	/*margin-bottom:100px*/
 }
 .mid-col {
 	position:absolute;
@@ -1450,8 +1450,7 @@ pre .css~* .id,pre .id {
 .archives-wrap .archive-year-wrap {
     line-height: 35px;
     position: absolute;
-    padding: 35px 40px 40px 0px;
-    padding-left: 5%;
+    padding: 35px 0px 0px 4.5%;
     font-size: 1.8em;
     z-index: 1;
 }
@@ -2567,14 +2566,14 @@ to {
 	margin-left:-10px
 }
 #footer {
-	font-size:12px;
-	font-family:Menlo,Monaco,Andale Mono,lucida console,Courier New,monospace;
-	text-shadow:0 1px #fff;
-	position:absolute;
-	bottom:20px;
-	opacity:.6;
-	width:100%;
-	text-align:center
+    font-size: 12px;
+    font-family: Menlo,Monaco,Andale Mono,lucida console,Courier New,monospace;
+    text-shadow: 0 1px #fff;
+    position: relative;
+    bottom: 20px;
+    opacity: .6;
+    width: 100%;
+    text-align: center;
 }
 #footer .outer {
 	padding:0 30px
@@ -3539,8 +3538,8 @@ to {
 
 .tag-cloud {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 200px;
+  margin-top: 105px;
+  margin-bottom: 210px;
 }
 .tag-cloud a {
   display: inline-block;
@@ -3631,6 +3630,7 @@ to {
   }
   .category-all-page .category-all {
     margin-top: 20px;
+    margin-bottom: 260px;
   }
   .category-all-page .category-list {
     margin: 0;

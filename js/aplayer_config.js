@@ -21,6 +21,8 @@ const ap = new APlayer({
             lrc: '/music/lrc/一直很安静 - 阿桑.lrc',
             cover: 'https://p1.music.126.net/SpovasHBud2A1qXXADXsBg==/109951163167455610.jpg?param=300x300',
             url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/一直很安静 - 阿桑.mp3',
+			theme: 'red',
+			type: '',
                   },
         {
             name: '亲爱的旅人啊（Cover：木村弓）',
@@ -28,7 +30,6 @@ const ap = new APlayer({
             lrc: '/music/lrc/亲爱的旅人啊（Cover：木村弓） - 周深.lrc',
             cover: 'https://p1.music.126.net/1YrCPOBV314i-mTtlDg8mQ==/109951164148664637.jpg?param=300x300',
             url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/亲爱的旅人啊（Cover：木村弓） - 周深.mp3',
-			theme: '#46718b'
                   },
         {
             name: '大鱼',
@@ -36,7 +37,6 @@ const ap = new APlayer({
             lrc: '/music/lrc/大鱼 - 周深.lrc',
             cover: 'https://p2.music.126.net/aiPQXP8mdLovQSrKsM3hMQ==/1416170985079958.jpg?param=300x300',
             url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/大鱼 - 周深.mp3',
-			theme: 'red',
                   },
         {
             name: '无羁',
