@@ -30,7 +30,7 @@ const ap = new APlayer({
             name: '举镜子的女孩',
             artist: '张子枫',
             lrc: '/music/lrc/举镜子的女孩 - 张子枫.lrc',
-            cover: 'http://singerimg.kugou.com/uploadpic/softhead/150/20201209/20201209103630863.jpg',
+            cover: 'http://p1.music.126.net/DVPFwwNkeWRiFx_UscjOpA==/109951165582170050.jpg?param=300x300',
             url: 'https://sharefs.ali.kugou.com/202110122207/38eb24edc7aceb6d062d0455fb1c0925/KGTX/CLTX001/35700581792749ef1260bb06178cf9f6.mp3',
                   },
 		{

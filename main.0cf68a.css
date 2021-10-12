@@ -3688,5 +3688,10 @@ to {
     }
 }
 
+/* APlayer 样式 */
+.aplayer .aplayer-lrc p {
+    color: #0e90d2 !important;
+}
+
 
 
