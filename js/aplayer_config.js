@@ -14,184 +14,179 @@ const ap = new APlayer({
     listFolded: true,//是否默认收起播放列表
     //listMaxHeight: 90,//播放列表的高度
 	//网易云默认外链链接：http://music.163.com/song/media/outer/url?id=ID数字.mp3
+	// 音乐网解析: https://www.jbsou.cn/
 
     audio: [{
-            name: '一直很安静',
-            artist: '阿桑',
-            lrc: '/music/lrc/一直很安静 - 阿桑.lrc',
-            cover: 'https://p1.music.126.net/SpovasHBud2A1qXXADXsBg==/109951163167455610.jpg?param=300x300',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/一直很安静 - 阿桑.mp3',
+            name: '所念皆星河',
+            artist: '房东的猫',
+            lrc: '/music/lrc/所念皆星河 - 房东的猫.lrc',
+            cover: 'http://p1.music.126.net/JtevaRk1N7ecpmwZCIvwzQ==/109951165293262893.jpg?param=300y300',
+            url: 'http://music.163.com/song/media/outer/url?id=1476239407.mp3',
 			theme: 'red',
 			type: '',
                   },
         {
-            name: '亲爱的旅人啊（Cover：木村弓）',
+            name: '举镜子的女孩',
+            artist: '张子枫',
+            lrc: '/music/lrc/举镜子的女孩 - 张子枫.lrc',
+            cover: 'http://singerimg.kugou.com/uploadpic/softhead/150/20201209/20201209103630863.jpg',
+            url: 'https://sharefs.ali.kugou.com/202110122207/38eb24edc7aceb6d062d0455fb1c0925/KGTX/CLTX001/35700581792749ef1260bb06178cf9f6.mp3',
+                  },
+		{
+            name: '亲爱的旅人啊',
             artist: '周深',
-            lrc: '/music/lrc/亲爱的旅人啊（Cover：木村弓） - 周深.lrc',
-            cover: 'https://p1.music.126.net/1YrCPOBV314i-mTtlDg8mQ==/109951164148664637.jpg?param=300x300',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/亲爱的旅人啊（Cover：木村弓） - 周深.mp3',
+            lrc: '/music/lrc/亲爱的旅人啊 - 周深.lrc',
+            cover: 'http://p2.music.126.net/1YrCPOBV314i-mTtlDg8mQ==/109951164148664637.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=1371939273.mp3'
+                  },
+        {
+            name: '平凡的一天',
+            artist: '毛不易',
+            lrc: '/music/lrc/平凡的一天 - 毛不易.lrc',
+            cover: 'http://p1.music.126.net/vmCcDvD1H04e9gm97xsCqg==/109951163350929740.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=569214247.mp3'
+                  },
+        {
+            name: '若把你',
+            artist: 'Kirsty刘瑾睿',
+            lrc: '/music/lrc/若把你 - Kirsty刘瑾睿.lrc',
+            cover: 'http://p1.music.126.net/M877M2-VhWZiLPVFORf9iQ==/109951163401482434.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=865632948.mp3'
                   },
         {
             name: '大鱼',
             artist: '周深',
-            lrc: '/music/lrc/大鱼 - 周深.lrc',
+            lrc: '/music/lrc/大鱼 (Live) - 周深.lrc',
             cover: 'https://p2.music.126.net/aiPQXP8mdLovQSrKsM3hMQ==/1416170985079958.jpg?param=300x300',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/大鱼 - 周深.mp3',
+            url: 'http://music.163.com/song/media/outer/url?id=1421191783',
                   },
         {
-            name: '无羁',
-            artist: 'Silu Wang-陈情令',
-            lrc: '/music/lrc/无羁 - Silu Wang-陈情令.lrc',
-            cover: 'https://p2.music.126.net/8eL7nls1F8o48_umy0uqBQ==/109951164361652548.jpg?param=300x300',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/无羁 - Silu Wang-陈情令.mp3'
+            name: '远方不远',
+            artist: '徐薇',
+            lrc: '/music/lrc/远方不远 - 徐薇.lrc',
+            cover: 'https://p1.music.126.net/LjwSx1AXf7si4MaAb8bzYw==/109951165041602630.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=431554119.mp3'
                   },
         {
-            name: '盗将行',
-            artist: '花粥,马雨阳',
-            lrc: '/music/lrc/盗将行 - 花粥,马雨阳.lrc',
-            cover: 'https://p2.music.126.net/-qHPT3rhxDlu5zQV9NcQ-A==/109951163555860423.jpg?param=300x300',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/盗将行 - 花粥,马雨阳.mp3'
+            name: '风铃',
+            artist: '孟凡明',
+            lrc: '/music/lrc/风铃 - 孟凡明.lrc',
+            cover: 'https://p1.music.126.net/ZjWhERuCE8slMan5EzX96w==/109951164358745101.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=1390480881.mp3'
                   },
         {
             name: '心如止水',
             artist: 'Ice Paper',
             lrc: '/music/lrc/心如止水 - Ice Paper.lrc',
-            cover: 'https://i.kfs.io/album/global/54740523,0v1/fit/500x500.jpg',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/心如止水 - Ice Paper.mp3'
-                  },
-        {
-            name: '我的梦',
-            artist: '张靓颖',
-            lrc: '/music/lrc/我的梦 - 张靓颖.lrc',
-            cover: 'https://n.sinaimg.cn/ent/transform/20151229/WLT_-fxmxxsp7232280.jpg',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/我的梦 - 张靓颖.mp3'
-                  },
-        {
-            name: 'Dream It Possible',
-            artist: '张靓颖',
-            lrc: '/music/lrc/Dream It Possible - 张靓颖.lrc',
-            cover: 'https://p2.music.126.net/Gfq_eVuq7lgilBf0w1g5dg==/109951163088676710.jpg?param=300x300',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/Dream It Possible - 张靓颖.mp3'
-                  },
-        {
-            name: 'Let Her Go',
-            artist: 'J.Fla',
-            lrc: '/music/lrc/Let Her Go - J.Fla.lrc',
-            cover: 'https://p1.music.126.net/izJEWkbpFZOkq59zyATvmg==/109951163265162334.jpg?param=300x300',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/Let Her Go - J.Fla.mp3'
-                  },
-        {
-            name: '我很快乐',
-            artist: '刘惜君',
-            lrc: '/music/lrc/我很快乐 - 刘惜君.lrc',
-            cover: 'https://p1.music.126.net/aNHxGZC0H1xRQfoz7UqSpQ==/36283883730943.jpg?param=300x300',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E6%88%91%E5%BE%88%E5%BF%AB%E4%B9%90%20-%20%E5%88%98%E6%83%9C%E5%90%9B.mp3'
-                  },
-        {
-            name: '南山南',
-            artist: '马頔',
-            lrc: '/music/lrc/南山南 - 马頔.lrc',
-            cover: 'http://imge.kugou.com/stdmusic/150/20150715/20150715223122826270.jpg',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E5%8D%97%E5%B1%B1%E5%8D%97%20-%20%E9%A9%AC%E9%A0%94.mp3'
-                  },
-        {
-            name: '起风了',
-            artist: '买辣椒也用券',
-            lrc: '/music/lrc/起风了 - 买辣椒也用券.lrc',
-            cover: 'https://p1.music.126.net/diGAyEmpymX8G7JcnElncQ==/109951163699673355.jpg?param=300x300',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E8%B5%B7%E9%A3%8E%E4%BA%86%20-%20%E4%B9%B0%E8%BE%A3%E6%A4%92%E4%B9%9F%E7%94%A8%E5%88%B8.mp3'
-                  },
-        {
-            name: '恋人心',
-            artist: '魏新雨',
-            lrc: '/music/lrc/恋人心 - 魏新雨.lrc',
-            cover: 'https://p2.music.126.net/OX6lR0jEjtxPfIgjVUtWww==/5786729697194540.jpg?param=300x300',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E6%81%8B%E4%BA%BA%E5%BF%83%20-%20%E9%AD%8F%E6%96%B0%E9%9B%A8.mp3'
-                  },
-        {
-            name: '断桥残雪',
-            artist: '许嵩',
-            lrc: '/music/lrc/断桥残雪 - 许嵩.lrc',
-            cover: 'https://p2.music.126.net/PEQ69_EwVpuaBmmSkAY0SQ==/58274116284456.jpg?param=300x300',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E6%96%AD%E6%A1%A5%E6%AE%8B%E9%9B%AA%20-%20%E8%AE%B8%E5%B5%A9.mp3'
-                  },
-        {
-            name: '曾经的你',
-            artist: '许巍',
-            lrc: '/music/lrc/曾经的你 - 许巍.lrc',
-            cover: 'https://p1.music.126.net/GoiTB6oG3vQWntnCjKRw0g==/109951163092691594.jpg?param=300x300',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E6%9B%BE%E7%BB%8F%E7%9A%84%E4%BD%A0%20-%20%E8%AE%B8%E5%B7%8D.mp3'
-                  },
-        {
-            name: '烟影如画',
-            artist: '重小烟',
-            lrc: '/music/lrc/烟影如画 - 重小烟.lrc',
-            cover: 'http://singerimg.kugou.com/uploadpic/softhead/150/20151214/20151214140843180469.jpg',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E7%83%9F%E5%BD%B1%E5%A6%82%E7%94%BB%20-%20%E9%87%8D%E5%B0%8F%E7%83%9F.mp3'
+            cover: 'http://p2.music.126.net/MLQl_7poLz2PTON6_JZZRQ==/109951163938219545.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=1349292048.mp3'
                   },
         {
             name: '成都',
             artist: '赵雷',
             lrc: '/music/lrc/成都 - 赵雷.lrc',
-            cover: 'http://imge.kugou.com/stdmusic/150/20161026/20161026104110350398.jpg',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E6%88%90%E9%83%BD%20-%20%E8%B5%B5%E9%9B%B7.mp3'
+            cover: '	https://p2.music.126.net/34YW1QtKxJ_3YnX9ZzKhzw==/2946691234868155.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=436514312.mp3'
                   },
         {
-            name: '一个人',
-            artist: '夏婉安',
-            lrc: '/music/lrc/一个人 - 夏婉安.lrc',
-            cover: 'http://imge.kugou.com/stdmusic/150/20150715/20150715230628433049.jpg',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E4%B8%80%E4%B8%AA%E4%BA%BA%20-%20%E5%A4%8F%E5%A9%89%E5%AE%89.mp3'
+            name: '忽而今夏',
+            artist: '汪苏泷',
+            lrc: '/music/lrc/忽而今夏 - 汪苏泷.lrc',
+            cover: 'https://p2.music.126.net/Oq2wbMND4y6jTSL5F3HmNA==/109951163293541812.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=1366388726.mp3'
                   },
         {
-            name: '送别',
-            artist: '朴树',
-            lrc: '/music/lrc/送别 - 朴树.lrc',
-            cover: 'http://imge.kugou.com/stdmusic/150/20160512/20160512094410431268.jpg',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E9%80%81%E5%88%AB%20-%20%E6%9C%B4%E6%A0%91.mp3'
+            name: '泡沫',
+            artist: 'G.E.M.邓紫棋',
+            lrc: '/music/lrc/泡沫 - G.E.M.邓紫棋.lrc',
+            cover: 'https://p2.music.126.net/fqleir2BWqbmE8tDNLa5Pg==/109951163789160762.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=233931.mp3'
                   },
         {
-            name: '风起时',
-            artist: '胡歌',
-            lrc: '/music/lrc/风起时 - 胡歌.lrc',
-            cover: 'https://oss.yansheng.xyz/%E9%A3%8E%E8%B5%B7%E6%97%B6-%E8%83%A1%E6%AD%8C.jpg',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E9%A3%8E%E8%B5%B7%E6%97%B6%20-%20%E8%83%A1%E6%AD%8C.mp3'
+            name: '何以爱情',
+            artist: '钟汉良',
+            lrc: '/music/lrc/何以爱情 - 钟汉良.lrc',
+            cover: 'https://p2.music.126.net/ODGACHdemEF8EgDy6-Mjlw==/109951163014224498.jpg?param=300x300',
+            url: 'https://sharefs.ali.kugou.com/202110122151/b8e67c1c85e933da8033cc67b4b17295/KGTX/CLTX001/9ffedd1dd3572a565b9c0417cf2f7d03.mp3'
                   },
         {
-            name: '追光者',
-            artist: '岑宁儿',
-            lrc: '/music/lrc/追光者 - 岑宁儿.lrc',
-            cover: 'http://imge.kugou.com/stdmusic/150/20170615/20170615171929677900.jpg',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E8%BF%BD%E5%85%89%E8%80%85%20-%20%E5%B2%91%E5%AE%81%E5%84%BF.mp3'
+            name: '可能否',
+            artist: '木小雅',
+            lrc: '/music/lrc/可能否 - 木小雅.lrc',
+            cover: 'https://p2.music.126.net/SJYnDay7wgewU3O7tPfmOQ==/109951163322541581.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=569214126.mp3'
                   },
         {
-            name: '炽热的青春',
-            artist: '贾乃亮',
-            lrc: '/music/lrc/炽热的青春 - 贾乃亮.lrc',
-            cover: 'http://imge.kugou.com/stdmusic/150/20150703/20150703153025347483.jpg',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E7%82%BD%E7%83%AD%E7%9A%84%E9%9D%92%E6%98%A5%20-%20%E8%B4%BE%E4%B9%83%E4%BA%AE.mp3'
+            name: '丁香花',
+            artist: '唐磊',
+            lrc: '/music/lrc/丁香花 - 唐磊.lrc',
+            cover: 'https://p2.music.126.net/FdutyVQ0oNOvjDHDixrALw==/844424930132282.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=151985.mp3'
                   },
         {
-            name: '逆流成河',
-            artist: '金南玲',
-            lrc: '/music/lrc/逆流成河 - 金南玲.lrc',
-            cover: 'http://imge.kugou.com/stdmusic/150/20180927/20180927182404805981.jpg',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E9%80%86%E6%B5%81%E6%88%90%E6%B2%B3%20-%20%E9%87%91%E5%8D%97%E7%8E%B2.mp3'
+            name: '冬眠',
+            artist: '司南',
+            lrc: '/music/lrc/冬眠 - 司南.lrc',
+            cover: 'https://p1.music.126.net/4KDBaQXnQywQovmqvjx-8Q==/109951164444131697.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=1398663411.mp3'
                   },
         {
-            name: 'Rage your dream',
-            artist: 'm.o.v.e',
-            lrc: '/music/lrc/Rage your dream - m.o.v.e.lrc',
-            cover: 'https://oss.yansheng.xyz/Rage%20your%20dream%20-%20m.o.v.e.jpg',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/Rage%20your%20dream%20-%20m.o.v.e.mp3'
+            name: '少年 (Live)',
+            artist: '梦然',
+            lrc: '/music/lrc/少年 (Live) - 梦然.lrc',
+            cover: 'https://p2.music.126.net/AcJI2yDiUNgKYn_Wr5eVxw==/109951165358201641.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=1483891561.mp3'
                   },
         {
-            name: 'いつも何度でも',
-            artist: '宗次郎',
-            lrc: '/music/lrc/いつも何度でも - 宗次郎.lrc',
-            cover: 'http://imge.kugou.com/stdmusic/150/20150720/20150720192351939143.jpg',
-            url: 'https://myblog12.qiniu.yansheng.xyz/audio/mp3/%E3%81%84%E3%81%A4%E3%82%82%E4%BD%95%E5%BA%A6%E3%81%A7%E3%82%82%20-%20%E5%AE%97%E6%AC%A1%E9%83%8E.mp3'
-                  }
+            name: '我和我的祖国',
+            artist: '王菲',
+            lrc: '/music/lrc/我和我的祖国 - 王菲.lrc',
+            cover: 'https://p1.music.126.net/HeGrAKPiZhKkONiFDxZvmw==/109951164384346866.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=1392990601.mp3'
+                  },
+        {
+            name: '在青春里遇见',
+            artist: '卜冠今',
+            lrc: '/music/lrc/在青春里遇见 - 卜冠今.lrc',
+            cover: 'https://p2.music.126.net/Oq2wbMND4y6jTSL5F3HmNA==/109951163293541812.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=1324399236.mp3'
+                  },
+        {
+            name: '杏花弦外雨',
+            artist: '杏花弦外雨',
+            lrc: '/music/lrc/杏花弦外雨 - CRITTY,司夏.lrc',
+            cover: 'https://p2.music.126.net/iwZ6w7D5C8WXgnjcohHb0Q==/7799935488436943.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=32957012.mp3'
+                  },
+        {
+            name: '刚刚好',
+            artist: '薛之谦',
+            lrc: '/music/lrc/刚刚好 - 薛之谦.lrc',
+            cover: '	https://p2.music.126.net/hti_a0LADoFMBHvOBwAtRA==/1369991500930171.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=415792881.mp3'
+                  },
+        {
+            name: '光年之外',
+            artist: 'G.E.M.邓紫棋',
+            lrc: '/music/lrc/光年之外 - G.E.M.邓紫棋.lrc',
+            cover: '	https://p2.music.126.net/fkqFqMaEt0CzxYS-0NpCog==/18587244069235039.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=449818741.mp3'
+                  },
+        {
+            name: '空空如也 ',
+            artist: '任然',
+            lrc: '/music/lrc/空空如也  - 任然.lrc',
+            cover: 'https://p1.music.126.net/84FJjDgb51TmRqixaUpshg==/109951163094476391.jpg?param=300x300',
+            url: 'http://music.163.com/song/media/outer/url?id=526464293.mp3'
+                  },
+		{
+            name: '蓝莲花',
+            artist: '许巍',
+            lrc: '/music/lrc/蓝莲花 - 许巍.lrc',
+            cover: 'http://imge.kugou.com/stdmusic/150/20150719/20150719030234152582.jpg',
+            url: 'https://sharefs.ali.kugou.com/202110122212/4e0614fd3f2776a2e1e816c75cc9c620/G158/M04/00/0F/fpQEAFzVU6aAD9uGAEIRaxAfzh8459.mp3'
+                  },
+
         ],
 		customAudioType: {
 			'customHls': function (audioElement, audio, player) {
