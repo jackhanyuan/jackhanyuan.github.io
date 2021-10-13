@@ -2,7 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://sanshui.findn.cn/music/index.html</loc>
+    <loc>https://sanshui.findn.cn/photos/data.json</loc>
+    
+    <lastmod>2021-10-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sanshui.findn.cn/photos/index.html</loc>
+    
+    <lastmod>2021-10-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sanshui.findn.cn/categories/index.html</loc>
     
     <lastmod>2021-10-13</lastmod>
     
@@ -11,14 +25,14 @@
   <url>
     <loc>https://sanshui.findn.cn/post/f514bda9.html</loc>
     
-    <lastmod>2021-10-12</lastmod>
+    <lastmod>2021-10-13</lastmod>
     
   </url>
   
   <url>
-    <loc>https://sanshui.findn.cn/categories/index.html</loc>
+    <loc>https://sanshui.findn.cn/music/index.html</loc>
     
-    <lastmod>2021-10-12</lastmod>
+    <lastmod>2021-10-13</lastmod>
     
   </url>
   
