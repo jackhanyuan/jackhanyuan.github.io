@@ -106,9 +106,9 @@ const ap = new APlayer({
         {
             name: '何以爱情',
             artist: '钟汉良',
-            lrc: '/music/lrc/何以爱情 - 钟汉良.lrc',
+            lrc: '/music/lrc/何以爱情(live) - 钟汉良.lrc',
             cover: 'https://p2.music.126.net/ODGACHdemEF8EgDy6-Mjlw==/109951163014224498.jpg?param=300x300',
-            url: 'https://sharefs.ali.kugou.com/202110122151/b8e67c1c85e933da8033cc67b4b17295/KGTX/CLTX001/9ffedd1dd3572a565b9c0417cf2f7d03.mp3'
+            url: 'http://music.163.com/song/media/outer/url?id=29922394.mp3'
                   },
         {
             name: '可能否',
