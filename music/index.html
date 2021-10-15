@@ -8,18 +8,21 @@
   <link rel="dns-prefetch" href="https://sanshui.findn.cn">
   <title>音乐 | 三水のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="const colorThief &#x3D; new ColorThief(); 	  const setTheme &#x3D; (index) &#x3D;&gt; { 		if (!ap.list.audios[index].theme) { 		  colorThief.getColorAsync(ap.list.audios[index].cover, function(color">
+  <meta name="description" content="const colorThief &#x3D; new ColorThief();       const setTheme &#x3D; (index) &#x3D;&gt; {         if (!ap.list.audios[index].theme) {           colorThief.getColorAsync(ap.list.audios[in">
 <meta property="og:type" content="website">
 <meta property="og:title" content="音乐">
 <meta property="og:url" content="https://sanshui.findn.cn/music/index.html">
 <meta property="og:site_name" content="三水のBlog">
-<meta property="og:description" content="const colorThief &#x3D; new ColorThief(); 	  const setTheme &#x3D; (index) &#x3D;&gt; { 		if (!ap.list.audios[index].theme) { 		  colorThief.getColorAsync(ap.list.audios[index].cover, function(color">
+<meta property="og:description" content="const colorThief &#x3D; new ColorThief();       const setTheme &#x3D; (index) &#x3D;&gt; {         if (!ap.list.audios[index].theme) {           colorThief.getColorAsync(ap.list.audios[in">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-10-13T03:44:30.768Z">
-<meta property="article:modified_time" content="2021-10-13T03:44:30.768Z">
+<meta property="og:image" content="https://qiniu.findn.cn/blog/photos/article/music-1.jpg">
+<meta property="og:image" content="https://qiniu.findn.cn/blog/photos/article/music-2.jpg">
+<meta property="article:published_time" content="2021-10-15T13:40:28.964Z">
+<meta property="article:modified_time" content="2021-10-15T13:40:28.964Z">
 <meta property="article:author" content="三水">
 <meta property="article:tag" content="python, flask, AI, linux, html, css, git, docker">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://qiniu.findn.cn/blog/photos/article/music-1.jpg">
   
   
     <link rel="icon" href="/img/favicon.png">
@@ -284,13 +287,17 @@
 	    <!-- 添加分类与标签 -->
 		
 		  
-			
+			<center>
+    <img src="https://qiniu.findn.cn/blog/photos/article/music-1.jpg" />
+</center>
+
+
 <!-- 添加APlayer音乐播放器,详见: https://aplayer.js.org -->
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
 
 <!-- 列表左对齐 并显示在最上面一层 -->
-<div id="aplayer2" style="text-align:left;z-index: 9999;">
+<div id="aplayer2" style="text-align:left;">
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
@@ -301,22 +308,31 @@
 
 <!-- 根据封面自适应主题色，主要是作用于进度条 -->
 <script type="text/javascript">
-	  const colorThief = new ColorThief();
-	  const setTheme = (index) => {
-		if (!ap.list.audios[index].theme) {
-		  colorThief.getColorAsync(ap.list.audios[index].cover, function(color) {
-			ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
-		  });
-		}
-	  };
-	  setTheme(ap.list.index);
-	  ap.on('listswitch', (data) => {
-		setTheme(data.index);
-	  });
+      const colorThief = new ColorThief();
+      const setTheme = (index) => {
+        if (!ap.list.audios[index].theme) {
+          colorThief.getColorAsync(ap.list.audios[index].cover, function(color) {
+            ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+          });
+        }
+      };
+      setTheme(ap.list.index);
+      ap.on('listswitch', (data) => {
+        setTheme(data.index);
+      });
 </script>
 
 <!-- APlayer音乐播放器功能结束 -->
 
+
+<center>
+    <h1></h1>
+    <h1></h1>
+</center>
+
+<center>
+<img src="https://qiniu.findn.cn/blog/photos/article/music-2.jpg" />
+</center>
 
 <!-- 用meting-js 添加APlayer音乐播放器, 可以实现添加导入音乐列表, 详见: https://github.com/metowolf/MetingJS -->
 <!-- 支持server：netease, tencent, kugou, xiami, baidu -->
@@ -327,72 +343,24 @@
 <!-- require MetingJS -->
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
-<meting-js style="margin-top: 1.5rem;width: auto;height: auto"
-	server="netease"
-	type="playlist"
-	id="6728476093"
-	fixed="false"
-	mini="false"
-	theme="#0088cc"
-	autoplay="false"
-	loop="all"
-	preload="auto"
-	volume="0.7"
-	order="list"
-	mutex="true"
-	list-folded="false"
-	list-max-height="700px"
-	storage-name="metingjs">
-</meting-js>
-<!-- 用meting-js 添加APlayer音乐播放器结束 -->
-
-
-<meting-js style="margin-top: 1.5rem;width: auto;height: auto"
-	server="tencent"
-	type="playlist"
-	id="7387685719"
-	fixed="false"
-	mini="false"
-	theme="#0088cc"
-	autoplay="false"
-	loop="all"
-	preload="auto"
-	volume="0.7"
-	order="list"
-	mutex="true"
-	list-folded="false"
-	list-max-height="700px"
-	storage-name="metingjs">
-</meting-js>
-
-
-<!-- 单曲 替换id即可 -->
-<meting-js
-	auto="https://music.163.com/#/song?id=1808077867">
-	<!-- music link, support: netease, tencent, xiami -->
-</meting-js>
-
-<meting-js
-	auto="https://y.qq.com/n/yqq/song/0003QaZA2iC58M.html">
-</meting-js>
 
 <!-- 歌单 替换id即可 -->
-<meting-js
-	auto="https://music.163.com/#/playlist?id=5412129655">
-</meting-js>
-
-<meting-js
-	auto="https://y.qq.com/n/yqq/playlist/7836199640.html">
-</meting-js>
-
-
-
-
-
-
-
-
-
+<p><meting-js style="margin-top: 1.5rem;width: auto;height: auto"
+    server="netease"
+    type="playlist"
+    id="6728476093"
+    fixed="false"
+    mini="false"
+    theme="#0088cc"
+    autoplay="false"
+    loop="all"
+    preload="auto"
+    volume="0.7"
+    order="list"
+    mutex="true"
+    list-folded="false"
+    list-max-height="700px"
+    storage-name="metingjs"><br></meting-js></p>
 
 		  
 		  
@@ -562,7 +530,7 @@
 		<span> 14 篇</span>
 		<span class="post-meta-divider">|</span>
 		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-		<span> <span class="post-count">8.1k</span></span>
+		<span> <span class="post-count">8.4k</span></span>
       </div>
 	  
 	  <!-- 添加不蒜子统计 -->

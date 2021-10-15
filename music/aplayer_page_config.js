@@ -106,9 +106,9 @@ const ap = new APlayer({
         {
             name: '何以爱情',
             artist: '钟汉良',
-            lrc: '/music/lrc/何以爱情(live) - 钟汉良.lrc',
+            lrc: '/music/lrc/何以爱情 - 钟汉良.lrc',
             cover: 'https://p2.music.126.net/ODGACHdemEF8EgDy6-Mjlw==/109951163014224498.jpg?param=300x300',
-            url: 'http://music.163.com/song/media/outer/url?id=29922394.mp3'
+            url: 'http://music.163.com/song/media/outer/url?id=1869806072.mp3'
                   },
         {
             name: '可能否',
@@ -185,7 +185,7 @@ const ap = new APlayer({
             artist: '许巍',
             lrc: '/music/lrc/蓝莲花 - 许巍.lrc',
             cover: 'http://imge.kugou.com/stdmusic/150/20150719/20150719030234152582.jpg',
-            url: 'https://sharefs.ali.kugou.com/202110122212/4e0614fd3f2776a2e1e816c75cc9c620/G158/M04/00/0F/fpQEAFzVU6aAD9uGAEIRaxAfzh8459.mp3'
+            url: 'http://music.163.com/song/media/outer/url?id=1428019277.mp3'
                   },
 
         ],
