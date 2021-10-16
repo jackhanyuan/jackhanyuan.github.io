@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://sanshui.findn.cn">
-  <title>Archives: 2020/1 | 三水のBlog</title>
+  <title>归档: 2020/1 | 三水のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="三水的个人技术博客">
 <meta property="og:type" content="website">
@@ -18,6 +18,8 @@
 <meta property="article:author" content="三水">
 <meta property="article:tag" content="python, flask, AI, linux, html, css, git, docker">
 <meta name="twitter:card" content="summary">
+  
+    <link rel="alternative" href="/atom.xml" title="三水のBlog" type="application/atom+xml">
   
   
     <link rel="icon" href="/img/favicon.png">
@@ -39,13 +41,14 @@
     
   <!-- 引入font-awesome图标库 -->
   <!-- <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">-->
+  
 <!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="三水のBlog" type="application/atom+xml">
-</head>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
 
 <body>
 
@@ -86,7 +89,7 @@
 				
 	        
 			   	
-				  <li><a href="/music/">音乐</a></li>
+				  <li><a href="/music">音乐</a></li>
 				
 	        
 			</ul>
@@ -120,6 +123,8 @@
 					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 		        
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/hanyuanyuan" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+					<a class="bilibili" target="_blank" href="https://space.bilibili.com/47219441" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 					<a class="mail" target="_blank" href="mailto:jackhanyuan@foxmail.com" title="mail"><i class="icon-mail"></i></a>
 		        
@@ -208,6 +213,8 @@
 			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/hanyuanyuan" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
+						<a class="bilibili" target="_blank" href="https://space.bilibili.com/47219441" title="bilibili"><i class="icon-bilibili"></i></a>
+			        
 						<a class="mail" target="_blank" href="mailto:jackhanyuan@foxmail.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
@@ -243,7 +250,7 @@
 					
 						<li style="width: 16.666666666666668%"><a href="/photos">相册</a></li>
 					
-						<li style="width: 16.666666666666668%"><a href="/music/">音乐</a></li>
+						<li style="width: 16.666666666666668%"><a href="/music">音乐</a></li>
 					
 					
 						<li style="width: 16.666666666666668%"><a href="/tags/markdown/">随笔</a></li>
@@ -653,11 +660,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">test</a>
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -879,38 +886,6 @@ MathJax.Hub.Queue(function() {
   
   
   <!--全局添加 aplayer播放器 https://aplayer.js.org/#/zh-Hans/ -->
-  
-	<!-- 添加APlayer音乐播放器,详见: https://aplayer.js.org -->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-	
-	<!-- 列表左对齐 并显示在最上面一层 -->
-    <div id="aplayer" style="text-align:left;z-index: 9999;">
-	
-	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
-
-    <!-- 为方便修改，添加一个配置文件，修改时直接修改配置文件即可。 -->
-	<script type="text/javascript" src="/js/aplayer_config.js"></script>
-
-    <!-- 根据封面自适应主题色，主要是作用于进度条 -->
-    <script type="text/javascript">
-          const colorThief = new ColorThief();
-          const setTheme = (index) => {
-            if (!ap.list.audios[index].theme) {
-              colorThief.getColorAsync(ap.list.audios[index].cover, function(color) {
-                ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
-              });
-            }
-          };
-          setTheme(ap.list.index);
-          ap.on('listswitch', (data) => {
-            setTheme(data.index);
-          });
-    </script>
-
-<!-- APlayer音乐播放器功能结束 -->
   
   <!-- aplayer播放器功能结束 -->
   

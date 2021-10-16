@@ -2689,7 +2689,7 @@ to {
 .left-icon-container{
 	width: 40px;
 	height: 40px;
-	background: #49b1f5;
+	/*background: #49b1f5;*/
 }
 .article-header {
 	border-left:none;
@@ -2731,7 +2731,7 @@ to {
 }
 .article {
 	padding:30px;
-	margin:30px 0;
+	margin:15px 0;
 	border:0;
 	font-size:16px;
 	color:#555
@@ -2893,7 +2893,7 @@ to {
 }
 .header-menu {
 	height:auto;
-	margin:10px 0 20px
+	margin:10px 0 30px
 }
 .header-menu.tools-nav {
 	display:none;
@@ -3604,14 +3604,14 @@ to {
 #waline {
 	margin: 0 0 20px;
     padding: 0 22px 20px;
-	--waline-theme-color: #0088cc;
+	--waline-theme-color: #49b1f5;
 	--waline-active-color: #0088CC;
 }
 
 @media screen and (max-width:800px) {
 	#waline {
     padding: 0 5px 20px;
-	--waline-theme-color: #49B1F5;
+	--waline-theme-color: #0088cc;
 	--waline-active-color: #0088CC;
 	}
 }
