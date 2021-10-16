@@ -1807,7 +1807,7 @@ to {
 	transition:all .2s ease-in
 }
 .article img {
-	max-width:100%
+	max-width:99%
 }
 .article-inner h1.article-title,.article-title {
 	color:#696969;
