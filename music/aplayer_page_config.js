@@ -31,7 +31,7 @@ const ap = new APlayer({
             artist: '张子枫',
             lrc: '/music/lrc/举镜子的女孩 - 张子枫.lrc',
             cover: 'http://p1.music.126.net/DVPFwwNkeWRiFx_UscjOpA==/109951165582170050.jpg?param=300x300',
-            url: 'https://sharefs.ali.kugou.com/202110122207/38eb24edc7aceb6d062d0455fb1c0925/KGTX/CLTX001/35700581792749ef1260bb06178cf9f6.mp3',
+            url: 'http://music.163.com/song/media/outer/url?id=1871120552.mp3',
                   },
 		{
             name: '亲爱的旅人啊',

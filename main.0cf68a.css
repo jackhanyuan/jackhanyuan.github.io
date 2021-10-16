@@ -3690,5 +3690,12 @@ to {
     color: #0e90d2 !important;
 }
 
+/* footer-support */
+.footer-support {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
