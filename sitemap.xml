@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sanshui.findn.cn/photos/video.html</loc>
+    
+    <lastmod>2021-10-17</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://sanshui.findn.cn/post/f672cc4e.html</loc>
     
     <lastmod>2021-10-17</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://sanshui.findn.cn/post/d87f7e0c.html</loc>
     
     <lastmod>2021-10-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sanshui.findn.cn/photos/video.html</loc>
-    
-    <lastmod>2021-10-13</lastmod>
     
   </url>
   
@@ -230,13 +230,6 @@
   </url>
   
   <url>
-    <loc>https://sanshui.findn.cn/categories/%E6%B5%8B%E8%AF%951/</loc>
-    <lastmod>2021-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://sanshui.findn.cn/categories/Diary/</loc>
     <lastmod>2021-10-17</lastmod>
     <changefreq>daily</changefreq>
@@ -244,14 +237,14 @@
   </url>
   
   <url>
-    <loc>https://sanshui.findn.cn/categories/yilia/test/</loc>
+    <loc>https://sanshui.findn.cn/categories/%E6%B5%8B%E8%AF%951/</loc>
     <lastmod>2021-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://sanshui.findn.cn/categories/%E6%B5%8B%E8%AF%951/%E6%B5%8B%E8%AF%952/</loc>
+    <loc>https://sanshui.findn.cn/categories/yilia/test/</loc>
     <lastmod>2021-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -266,6 +259,13 @@
   
   <url>
     <loc>https://sanshui.findn.cn/categories/tt/</loc>
+    <lastmod>2021-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sanshui.findn.cn/categories/%E6%B5%8B%E8%AF%951/%E6%B5%8B%E8%AF%952/</loc>
     <lastmod>2021-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
