@@ -1,0 +1,16 @@
+User-agent: *
+
+Allow: /
+Allow: /archives
+Allow: /post
+Allow: /page
+
+
+Disallow: /css
+Disallow: /img
+Disallow: /js
+Disallow: /fonts
+
+Sitemap: /sitemap.xml
+Sitemap: /baidusitemap.xml
+
