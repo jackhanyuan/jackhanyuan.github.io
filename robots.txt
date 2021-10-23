@@ -12,6 +12,6 @@ Disallow: /js
 Disallow: /fonts
 Disallow: /music
 
-Sitemap: /sitemap.xml
-Sitemap: /baidusitemap.xml
+Sitemap: sitemap.xml
+Sitemap: baidusitemap.xml
 
