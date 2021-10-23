@@ -1100,7 +1100,7 @@ pre .css~* .id,pre .id {
 }
 .archive-article-date {
 	/*color:#999;*/
-	margin-right:7.6923%;
+	margin-right:9%;
 	float:right
 }
 .archive-article-date .icon {
@@ -3580,7 +3580,7 @@ to {
 
 }
 .category-list-item-list-item {
-    margin: 10px 15px;
+    margin: 10px -10px;
 	font-size: 16px;
 }
 .category-list-item-list-link {
