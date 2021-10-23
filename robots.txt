@@ -12,6 +12,6 @@ Disallow: /js
 Disallow: /fonts
 Disallow: /music
 
-Sitemap: sitemap.xml
-Sitemap: baidusitemap.xml
+Sitemap: https://sanshui.findn.cn/sitemap.xml
+Sitemap: https://sanshui.findn.cn/baidusitemap.xml
 
