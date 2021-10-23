@@ -1820,7 +1820,7 @@ to {
 }
 .article-header {
 	border-left:5px solid #0088CC;
-	padding:25px 0px 15px 25px;
+	padding:25px 0px 5px 25px;
 	padding-left:7.2923%
 }
 .article-meta {
@@ -3669,6 +3669,13 @@ to {
     opacity: 1;
 }
 
+/* word-count*/
+.word-count {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
 /*手机端样式调整*/
 @media screen and (max-width:800px) {
 	body {
@@ -3686,6 +3693,10 @@ to {
     }
 	.article-inner h1.article-title_code_ant,.article-title_code_ant {
 	display: block;
+   }
+   .word-count {
+    margin-top: 10px;
+    margin-bottom: 15px;
    }
 }
 
