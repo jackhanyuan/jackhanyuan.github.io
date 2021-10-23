@@ -1883,7 +1883,7 @@ to {
 	border-color:#d1d1d1
 }
 .article-inner h1 {
-	font-size:28px;
+	font-size:26px;
 	font-size:1.75rem;
 	line-height:1.25;
 	margin-top:2em;
@@ -1897,7 +1897,7 @@ to {
 	margin-bottom:1.2173913043em
 }
 .article-inner h3 {
-	font-size:19px;
+	font-size:20px;
 	font-size:1.1875rem;
 	line-height:1.1052631579;
 	margin-top:2.9473684211em;
@@ -1966,9 +1966,9 @@ to {
 	content:"";
 	width:6px;
 	height:6px;
-	border:1px solid #999;
+	border:1px solid #0088cc;
 	border-radius:10px;
-	background:#aaa;
+	background:#fff;
 	display:inline-block;
 	margin-right:10px;
 	float:left;
@@ -1991,15 +1991,15 @@ to {
 }
 .article-entry li ol li:before,.article-entry li ul li:before {
 	content:"";
-	background:#dedede
+	background:#fff
 }
 .article-entry h1 {
 	margin-top:30px
 }
-.article-entry h2,.article-entry h3,.article-entry h4,.article-entry h5,.article-entry h6 {
+.article-entry h1,.article-entry h2,.article-entry h3,.article-entry h4,.article-entry h5,.article-entry h6 {
 	margin-top:20px;
 	font-weight:700;
-	color:#574c4c;
+	color:#0088cc;
 	padding-bottom:5px;
 	border-bottom:1px solid #ddd
 }
@@ -3527,7 +3527,7 @@ to {
 	margin-left:0;
 	font-weight:300;
 	line-height:35px;
-	margin-bottom:25px;
+	margin-bottom:10px;
 	font-size:30px;
 	transition:color .3s
 }
@@ -3618,9 +3618,10 @@ to {
 
 /*版权声明的样式*/
 .declare {
-    background-color: #f6f6f6;
-    margin-top: 30px;
-    border-left: 5px solid #f44336;
+	font-size: .9rem;
+    margin: 2rem 0;
+    background-color: #f5f5f5;
+    border-left: 5px solid orangered;
     padding: .5em 1em;
 	word-break: break-all;
 }
@@ -3683,6 +3684,9 @@ to {
         opacity:1.0;
 		/*播放器透明度*/
     }
+	.article-inner h1.article-title_code_ant,.article-title_code_ant {
+	display: block;
+   }
 }
 
 /* APlayer 样式 */
