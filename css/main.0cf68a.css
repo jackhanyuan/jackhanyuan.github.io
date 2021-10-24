@@ -1994,9 +1994,13 @@ to {
 	background:#fff
 }
 .article-entry h1 {
-	margin-top:30px
+	font-size:26px;
+	margin-top:30px;
+	font-weight:700;
+	color:#0088cc;
+	padding-bottom:5px;
 }
-.article-entry h1,.article-entry h2,.article-entry h3,.article-entry h4,.article-entry h5,.article-entry h6 {
+.article-entry h2,.article-entry h3,.article-entry h4,.article-entry h5,.article-entry h6 {
 	margin-top:20px;
 	font-weight:700;
 	color:#0088cc;
