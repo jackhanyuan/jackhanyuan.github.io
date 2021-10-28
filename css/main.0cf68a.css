@@ -1823,8 +1823,7 @@ to {
 }
 .article-header {
 	border-left:5px solid #0088CC;
-	padding:25px 0px 5px 25px;
-	padding-left:7.2923%
+	padding:25px 7.2923% 5px;
 }
 .article-meta {
 	width:150px;
