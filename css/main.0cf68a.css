@@ -442,7 +442,9 @@ input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
 }
 table {
 	border-collapse:collapse;
-	border-spacing:0
+	border-spacing:0;
+	overflow: auto;
+    display: block;
 }
 td,th {
 	padding:0;
@@ -1804,7 +1806,8 @@ to {
 	border-top:1px solid #fff;
 	border-bottom:1px solid #fff;
 	background:#fff;
-	transition:all .2s ease-in
+	transition:all .2s ease-in;
+	word-break: break-all;
 }
 .article img {
 	max-width:99%
@@ -1933,7 +1936,8 @@ to {
 	padding-left:7.6923%
 }
 .article-entry p {
-	margin-top:10px
+	margin-top:10px;
+	word-break: break-all;
 }
 .article-entry li code, .article-entry p code {
 	color: #c7254e;
@@ -2044,7 +2048,8 @@ to {
 	width:100%;
 	border:1px solid #dedede;
 	margin:15px 0;
-	border-collapse:collapse
+	border-collapse:collapse;
+	word-break: keep-all;
 }
 .article-entry table td,.article-entry table tr {
 	height:35px
