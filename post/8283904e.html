@@ -6,21 +6,36 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://sanshui.findn.cn">
-  <title>视频 | 三水のBlog</title>
+  <title>Linux 内核裁剪及编译 | 三水のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta name="description" content="Photos   Videos       李宏毅2021春机器学习课程               《PyTorch深度学习实践》完结合集 —— 刘二大人                 动手学深度学习v2 —— 李沐">
-<meta property="og:type" content="website">
-<meta property="og:title" content="视频">
-<meta property="og:url" content="https://sanshui.findn.cn/photos/video.html">
+  <meta name="description" content="好久没更新了，上周，我利用空闲时间设计了linux内核实验的指导书，现在我把实验过程分享给大家。 本次实验的目标是自己动手裁剪并编译linux内核、制作最小根文件系统、并成功把制作的mini-linu启动起来，具体分为以下几步：  下载Linux内核，裁剪并编译内核源码。 下载并编译BusyBox，在此基础上制作一个最小的根文件系统。 用编译好的内核和根文件系统制作可启动的mini-Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux 内核裁剪及编译">
+<meta property="og:url" content="https://sanshui.findn.cn/post/8283904e.html">
 <meta property="og:site_name" content="三水のBlog">
-<meta property="og:description" content="Photos   Videos       李宏毅2021春机器学习课程               《PyTorch深度学习实践》完结合集 —— 刘二大人                 动手学深度学习v2 —— 李沐">
+<meta property="og:description" content="好久没更新了，上周，我利用空闲时间设计了linux内核实验的指导书，现在我把实验过程分享给大家。 本次实验的目标是自己动手裁剪并编译linux内核、制作最小根文件系统、并成功把制作的mini-linu启动起来，具体分为以下几步：  下载Linux内核，裁剪并编译内核源码。 下载并编译BusyBox，在此基础上制作一个最小的根文件系统。 用编译好的内核和根文件系统制作可启动的mini-Linux">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-10-24T15:22:04.482Z">
-<meta property="article:modified_time" content="2021-10-24T15:22:04.482Z">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image-20211213231234705.png">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image-20211214002141124.png">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image2.png">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image3.png">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image4.png">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image5.png">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image6.png">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image7.png">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image8.png">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image9.png">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image10.png">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image11.png">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image12.png">
+<meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image13.png">
+<meta property="article:published_time" content="2021-12-13T12:47:44.000Z">
+<meta property="article:modified_time" content="2021-12-13T16:25:27.001Z">
 <meta property="article:author" content="三水">
-<meta property="article:tag" content="博客, Blog, sanshui, 三水, python, flask, AI, linux, git, docker, hexo, 数据库, 网络, 后端, 深度学习">
+<meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://qiniu.findn.cn//blog/photos/article/image-20211213231234705.png">
   
   
     <link rel="alternative" href="/atom.xml" title="三水のBlog" type="application/atom+xml">
@@ -315,20 +330,90 @@ https://ziyuan.baidu.com/college/courseinfo?id=267&page=2#h2_article_title19-->
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-Linux内核裁剪及编译" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title_code_ant" itemprop="name">
-	<a href="/photos/video.html">视频</a>
+	<a href="/post/8283904e.html">Linux 内核裁剪及编译</a>
 	</h1>
   
 
         
 		
+		  <a href="/post/8283904e.html" class="archive-article-date">
+  	<time datetime="2021-12-13T12:47:44.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2021-12-13</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	<span>
+		&nbsp; &nbsp; &nbsp;
+		<span class="post-meta-item-text">阅读量:</span>
+		<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+		<span class="post-meta-item-text">次</span>
+	</span>
+	
+	-->
+	
+    <!-- waline阅读量统计 -->
+	
+	<span>
+		&nbsp; &nbsp; &nbsp;
+		<i class="fa fa-eye" aria-hidden="true"></i>
+		&nbsp;
+		<span id="/post/8283904e.html" class="waline-visitor-count"><i class="fa fa-spinner fa-spin"></i></span>
+	</span>
+	
+
+</a>
+
+
+        
 		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+      
+        <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #0088CC;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+		  &nbsp; 
+      
+    
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">1.7k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">6min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
 		
       </header>
     
@@ -336,40 +421,176 @@ https://ziyuan.baidu.com/college/courseinfo?id=267&page=2#h2_article_title19-->
 	    <!-- 添加分类与标签 -->
 		
 		  
-			
-<link rel="stylesheet" href="./static/ins.css">
-<div class="photos-btn-wrap">	
-  <a class="photos-btn" href="/photos/index.html">Photos</a>
-  <a class="photos-btn active" href="/photos/video.html">Videos</a>
-</div>
+			<img src="https://qiniu.findn.cn//blog/photos/article/image-20211213231234705.png" alt="Linux Kernel" style="zoom:100%;" />
 
+<p>好久没更新了，上周，我利用空闲时间设计了linux内核实验的指导书，现在我把实验过程分享给大家。</p>
+<p>本次实验的目标是自己动手裁剪并编译linux内核、制作最小根文件系统、并成功把制作的mini-linu启动起来，具体分为以下几步：</p>
+<ul>
+<li>下载Linux内核，裁剪并编译内核源码。</li>
+<li>下载并编译BusyBox，在此基础上制作一个最小的根文件系统。</li>
+<li>用编译好的内核和根文件系统制作可启动的mini-Linux系统。</li>
+<li>用QEMU启动制作好的mini-Linux系统。 </li>
+</ul>
+<span id="more"></span>
 
-<center>
-  <h1>李宏毅2021春机器学习课程</h1>
-</center>
-<hr>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0" >
-  <iframe src="//player.bilibili.com/player.html?aid=246993280&bvid=BV1Wv411h7kN&cid=303819228&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 90%; width: 100%; "></iframe>
-</div>
+<p>本次实验基于以下软件和环境完成：</p>
+<ul>
+<li>VMware® Workstation 16 Pro </li>
+<li>Ubuntu 20.04 LTS</li>
+<li>Linux内核 5.10.83 （建议版本一致）</li>
+<li>BusyBox 1.33.2 （建议版本一致）</li>
+<li>grub-install (GRUB) 2.04</li>
+<li>QEMU 4.2.1</li>
+</ul>
+<p>本篇文章，将完成实验的第一步——Linux内核裁剪及编译。</p>
+<blockquote>
+<p>Linux的内核是单内核设计风格的，不过Linux的单内核设计采用了微内核设计风格的模块化设计思想，所以使得内核的核心可以很小，而内核所需要提供的其他功能都被设计成了各种内核模块，需要的时候只需将各种内核模块加载进内核的核心即可，我们可以通过编辑Linux源码目录下的”.config”配置文件来裁剪定制linux内核，在此次实验中，我们主要通过“make menuconfig”命令打开图形化界面来配置“.config”文件。</p>
+</blockquote>
+<h1 id="下载内核源码"><a href="#下载内核源码" class="headerlink" title="下载内核源码"></a>下载内核源码</h1><p>（1）Linux内核官网：<a target="_blank" rel="noopener" href="https://www.kernel.org/">https://www.kernel.org/</a>。</p>
+<p>本次实验我们使用的内核版本为长期支持版本<code>5.10.83</code>，下载链接如下：<a target="_blank" rel="noopener" href="https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.83.tar.xz">https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.83.tar.xz</a>。</p>
+<img src="https://qiniu.findn.cn//blog/photos/article/image-20211214002141124.png" alt="kernel.org"  />
 
-<hr>
-<center>
-    <h1>《PyTorch深度学习实践》完结合集 —— 刘二大人</h1>
-</center>
-<hr>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=97078147&bvid=BV1Y7411d7Ys&cid=165713573&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 90%; width: 100%;"></iframe>
-</div>
+<p>（2）本次实验采用的是<code>VMware® Workstation 16 Pro</code>虚拟机，虚拟机系统为<code>Ubuntu 20.04 LTS</code>。打开虚拟机的Ubuntu20.04系统，实验过程将全程在此系统上完成。</p>
+<p>（3）打开终端，切换至root用户（以下操作都在root下完成），切换至根目录，创建实验项目文件夹，并将内核源码下载并解压到该目录下。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">su </span><br><span class="line"><span class="built_in">cd</span> /</span><br><span class="line">mkdir mini-linux</span><br><span class="line"><span class="built_in">cd</span> mini-linux</span><br><span class="line">wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.83.tar.xz</span><br></pre></td></tr></table></figure>
 
-<hr>
-<center>
-    <h1>动手学深度学习v2 —— 李沐</h1>
-</center>
-<hr>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=714717789&bvid=BV1oX4y137bC&cid=313097645&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 90%; width: 100%;"></iframe>
-</div>
+<img src="https://qiniu.findn.cn//blog/photos/article/image2.png" alt="创建mini-linux目录" style="zoom:67%;" />
 
+<p>（4）解压下载好的内核源码，并进入到linux-5.10.83目录。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -vxf linux-5.10.83.tar.xz</span><br><span class="line"><span class="built_in">cd</span> linux-5.10.83</span><br></pre></td></tr></table></figure>
+
+<p>如果不是第一次编译，请运行以下命令清理：</p>
+<ul>
+<li>makeclean: 删除编译中间文件，但是保留配置。</li>
+<li>make mrproper：删除包括配置文件的所有构建文件。</li>
+<li>make distclean：执行mrproper所做的一切，并删除备份文件。</li>
+</ul>
+<h1 id="配置内核"><a href="#配置内核" class="headerlink" title="配置内核"></a>配置内核</h1><p>（1）指定硬件体系架构为<code>x86</code>。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> ARCH=x86  </span><br></pre></td></tr></table></figure>
+
+<p>（2）生成config文件。</p>
+<p>Linux自带很多内核的配置文件，如：</p>
+<ul>
+<li><p>make defconfig：生成默认的内核配置。</p>
+</li>
+<li><p>make allmodconfig：所有的可选的选项构建成模块。</p>
+</li>
+<li><p>make allyesconfig：生成全部选择是的内核配置。</p>
+</li>
+<li><p>make noconfig：生成全部选择否的内核配置。</p>
+</li>
+</ul>
+<p>（3）本次实验我们根据虚拟机系统，选择 x86_64_defconfig 。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make x86_64_defconfig</span><br></pre></td></tr></table></figure>
+
+<p>此操作会将<code>./arch/x86/configs/x86_64_defconfig</code>文件复制为<code>./.config</code>，作为我们编译内核的初始配置文件。</p>
+<img src="https://qiniu.findn.cn//blog/photos/article/image3.png" alt="生成config文件" style="zoom:67%;" />
+
+<p>（4）使用图形化界面配置内核。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make meunconfig</span><br></pre></td></tr></table></figure>
+
+<p>此时会进入Kernel Configuration图形化配置界面</p>
+<img src="https://qiniu.findn.cn//blog/photos/article/image4.png" alt="Kernel Configuration图形化配置界面" style="zoom:67%;" />
+
+<p>（5）我们用键盘操作此图形界面：</p>
+<ul>
+<li><p>[*]代表被选中，[ ]表示未被选中。</p>
+</li>
+<li><p>↑ ↓ 方向键可以快速在配置项中选择。</p>
+</li>
+</ul>
+<ul>
+<li>← → 方向键可以在select、exit等菜单项之间选择。    </li>
+</ul>
+<ul>
+<li>Y 选择此项，并包含进内核中。</li>
+</ul>
+<ul>
+<li>N 取消选择此项，不包含内核中。</li>
+</ul>
+<ul>
+<li>M 编译成模块。</li>
+</ul>
+<ul>
+<li>Enter 进入或确认选项。</li>
+</ul>
+<ul>
+<li><strong>H 配置说明</strong>。</li>
+</ul>
+<p>​    <em>在任何一个选项下按H，可以看到详细的配置说明，自己不确定的项可以用此方法来辅助判断，如下图，如果有<code>If unsure say Y</code>、<code>you&#39;ll need to say Y here</code>、<code>If in doubt, say &quot;Y&quot;</code>则建议必选，如果有<code>If unsure say N here</code>，则可以根据情况不选。</em></p>
+<img src="https://qiniu.findn.cn//blog/photos/article/image5.png" alt="配置小技巧" style="zoom: 67%;" />
+
+<ul>
+<li><strong>/ 搜索</strong>。</li>
+</ul>
+<p>​    <em>在任意界面输入<code>/</code>，则会进入搜索，可以根据需求搜索配置项。</em></p>
+<img src="https://qiniu.findn.cn//blog/photos/article/image6.png" alt="搜索界面" style="zoom: 67%;" />
+
+<p>返回搜索结果后，再输入搜索结果对应的数字，则会跳转至对应的配置项，可以大大提高效率。</p>
+<img src="https://qiniu.findn.cn//blog/photos/article/image7.png" alt="搜索结果" style="zoom:67%;" />
+
+<p>Kernel配置介绍、裁剪经验，可以参考以下文档</p>
+<p>​    [1]. <a target="_blank" rel="noopener" href="https://blog.csdn.net/liao20081228/article/details/81389813">Linux内核（4.17.10）配置项详解（x86）</a></p>
+<p>​    [2]. <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43892506/article/details/117885040">kernel裁剪</a></p>
+<p>​    [3]. <a target="_blank" rel="noopener" href="https://blog.csdn.net/u011124985/article/details/80453772">linux内核裁剪的具体过程和方法</a></p>
+<h1 id="内核裁剪"><a href="#内核裁剪" class="headerlink" title="内核裁剪"></a>内核裁剪</h1><p>通过内核裁剪，我们可以</p>
+<ul>
+<li><p>学习内核裁剪的方法和流程。</p>
+</li>
+<li><p>在资源内有限的时候，裁剪内核可以使系统变得简洁和轻量化。</p>
+</li>
+<li><p>不必要的驱动，不仅使得内核占用空间，运行速度慢，还会引起不必要的问题。</p>
+</li>
+</ul>
+<p>内核裁剪在<code>menuconfig</code>界面进行，我们使用的<code>x86_64_defconfig</code>已经做了大量裁剪，编译后内核大小仅有9.5M，精细裁剪需要花费大量时间，这里仅演示几项，大家可以多多尝试。</p>
+<p>（1）给内核版本号添加自定义后缀：</p>
+<ul>
+<li>在<code>General setup</code>选项下，选择<code>Local version - append to kernel release</code>，我们可以给内核版本号添加自定义后缀，如<code>-mini-linux-2021</code>。</li>
+</ul>
+<img src="https://qiniu.findn.cn//blog/photos/article/image8.png" alt="内核版本号添加自定义后缀" style="zoom: 67%;" />
+
+<p>（2）我们需要内核支持RAM disk：</p>
+<ul>
+<li>在<code>General setup</code>选项下，选择<code>Initial RAM filesystem and RAM disk (initramfs/initrd) support</code>。</li>
+<li>在<code>Device Drivers</code>选项下，勾选<code>Block devices</code>，并进入<code>Block devices</code>，勾选<code>RAM block device support</code>，并将其第二项<code>Default RAM disk size (kbytes) (NEW)</code>设置为<code>65536</code>。</li>
+</ul>
+<img src="https://qiniu.findn.cn//blog/photos/article/image9.png" alt="RAM disk support" style="zoom: 67%;" />
+
+<p>（3）取消多核心调度增强：</p>
+<ul>
+<li>在<code>Processor type and features</code>选项下，取消勾选多核心调度增强<code>Multi-core scheduler support</code>。</li>
+</ul>
+<img src="https://qiniu.findn.cn//blog/photos/article/image10.png" alt="取消多核心调度增强" style="zoom: 67%;" />
+
+<p>（4）取消调试内核：</p>
+<ul>
+<li>在<code>General architecture-dependent options</code>选项下，取消勾选调试内核<code>Kprobes</code>选项。</li>
+</ul>
+<img src="https://qiniu.findn.cn//blog/photos/article/image11.png" alt="取消调试内核" style="zoom: 67%;" />
+
+<p>（5）取消允许强制卸载正在使用中的模块：</p>
+<ul>
+<li>在<code>Enable loadable module support</code>选项下，取消勾选允许强制卸载正在使用中的模块<code>Forced module unloading</code>。</li>
+</ul>
+<p>（6）取消勾选磁盘配额：</p>
+<ul>
+<li>在<code>File systems</code>选项下，取消勾选磁盘配额<code>Quota support</code>。</li>
+</ul>
+<p>在所有需要的选项配置完毕之后，按Exit退出，选择Yes保存。</p>
+<img src="https://qiniu.findn.cn//blog/photos/article/image12.png" alt="保存并退出内核配置" style="zoom: 67%;" />
+
+<h1 id="编译内核"><a href="#编译内核" class="headerlink" title="编译内核"></a>编译内核</h1><p>（1）下面就可以开始编译内核了：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make -j8</span><br></pre></td></tr></table></figure>
+
+<p>make命令后面跟着线程数，8表示使用8线程去执行，不要超过虚拟机系统配置的核心数。</p>
+<p>我的机子16G内存，8线程编译，大概10分钟，编译就完成了，编译成功后的内核位于：<code>arch/x86_64/boot/bzImage</code>。</p>
+<p>（2）把编译好的内核文件拷贝到mini-linux目录下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cp arch/x86_64/boot/bzImage ../</span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line">ls -alh</span><br></pre></td></tr></table></figure>
+
+<p>用<code>ls</code>命令，可以看到它的大小只有9.2M。</p>
+<img src="https://qiniu.findn.cn//blog/photos/article/image13.png" alt="查看编译好的内核" style="zoom: 67%;" />
+
+<p>Linux 内核裁剪及编译教程就到这里，下一部分是用busybox制作一个最小的根文件系统，敬请关注！</p>
 
 		  
 		  
@@ -377,14 +598,91 @@ https://ziyuan.baidu.com/college/courseinfo?id=267&page=2#h2_article_title19-->
 		
 	  <!-- 添加版权声明 -->
       
+        <!-- 添加版权声明 -->
+<!--https://blog.csdn.net/weixin_41287260/article/details/103050336-->
+
+<div class="declare">
+	<strong class="author">本文作者：</strong>
+	
+	  三水
+	
+	
+	<!-- <br>
+	<strong class="create-time">发布时间：</strong>
+	2021-12-13 -->
+	
+	<br>
+	<strong class="update-time">最后更新：</strong>
+	2021年12月14日 00:25:27
+	
+	<!-- <br>
+	<strong class="article-titles">本文标题：</strong>
+	<a href="https://sanshui.findn.cn/post/8283904e.html" title="Linux 内核裁剪及编译" target="_blank">Linux 内核裁剪及编译</a> -->
+	
+	<br>
+	<strong class="article-url">本文链接：</strong>
+	<a href="https://sanshui.findn.cn/post/8283904e.html" title="Linux 内核裁剪及编译" target="_blank">https://sanshui.findn.cn/post/8283904e.html</a>
+	
+	<br>
+	<strong class="copyright">版权声明：</strong>
+	本作品采用
+	<a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议">CC BY-NC-SA 4.0</a>
+	许可协议进行许可，转载请注明出处！
+	
+	
+</div>
+<!-- 添加版权声明 -->
+      
       <!-- 添加版权声明结束 -->
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>感谢您的支持<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://qiniu.findn.cn/blog/photos/static/alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://qiniu.findn.cn/blog/photos/static/wechatpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
       
 	  
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
 	  
@@ -436,7 +734,7 @@ https://ziyuan.baidu.com/college/courseinfo?id=267&page=2#h2_article_title19-->
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-	  <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://sanshui.findn.cn/photos/video.html" alt="微信分享二维码">
+	  <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://sanshui.findn.cn/post/8283904e.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -451,9 +749,49 @@ https://ziyuan.baidu.com/college/courseinfo?id=267&page=2#h2_article_title19-->
 
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/post/6473c150.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">图像和视频篡改检测Manipulation Detection综述</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 
+
+
+	<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+					<span style="font-size: 20px;font-weight: bold;">目录</span>
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E5%86%85%E6%A0%B8%E6%BA%90%E7%A0%81"><span class="toc-number">1.</span> <span class="toc-text">下载内核源码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%86%85%E6%A0%B8"><span class="toc-number">2.</span> <span class="toc-text">配置内核</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%85%E6%A0%B8%E8%A3%81%E5%89%AA"><span class="toc-number">3.</span> <span class="toc-text">内核裁剪</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%96%E8%AF%91%E5%86%85%E6%A0%B8"><span class="toc-number">4.</span> <span class="toc-text">编译内核</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
 
 
 
@@ -624,7 +962,7 @@ https://ziyuan.baidu.com/college/courseinfo?id=267&page=2#h2_article_title19-->
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

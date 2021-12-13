@@ -6,18 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://sanshui.findn.cn">
-  <title>视频 | 三水のBlog</title>
+  <title>三水のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta name="description" content="Photos   Videos       李宏毅2021春机器学习课程               《PyTorch深度学习实践》完结合集 —— 刘二大人                 动手学深度学习v2 —— 李沐">
+  <meta name="description" content="三水-Sanshui的个人技术博客">
 <meta property="og:type" content="website">
-<meta property="og:title" content="视频">
-<meta property="og:url" content="https://sanshui.findn.cn/photos/video.html">
+<meta property="og:title" content="三水のBlog">
+<meta property="og:url" content="https://sanshui.findn.cn/index.html">
 <meta property="og:site_name" content="三水のBlog">
-<meta property="og:description" content="Photos   Videos       李宏毅2021春机器学习课程               《PyTorch深度学习实践》完结合集 —— 刘二大人                 动手学深度学习v2 —— 李沐">
+<meta property="og:description" content="三水-Sanshui的个人技术博客">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-10-24T15:22:04.482Z">
-<meta property="article:modified_time" content="2021-10-24T15:22:04.482Z">
 <meta property="article:author" content="三水">
 <meta property="article:tag" content="博客, Blog, sanshui, 三水, python, flask, AI, linux, git, docker, hexo, 数据库, 网络, 后端, 深度学习">
 <meta name="twitter:card" content="summary">
@@ -315,20 +313,78 @@ https://ziyuan.baidu.com/college/courseinfo?id=267&page=2#h2_article_title19-->
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            
+  
+    <article id="post-Linux内核裁剪及编译" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 class="article-title_code_ant" itemprop="name">
-	<a href="/photos/video.html">视频</a>
-	</h1>
+    <h1 itemprop="name">
+      <a class="article-title_code_ant" href="/post/8283904e.html">Linux 内核裁剪及编译</a>
+    </h1>
   
 
         
 		
+		  <a href="/post/8283904e.html" class="archive-article-date">
+  	<time datetime="2021-12-13T12:47:44.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2021-12-13</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	
+    <!-- waline阅读量统计 -->
+	
+
+</a>
+
+
+        
 		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+      
+        <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #0088CC;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+		  &nbsp; 
+      
+    
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">1.7k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">6min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
 		
       </header>
     
@@ -336,42 +392,18 @@ https://ziyuan.baidu.com/college/courseinfo?id=267&page=2#h2_article_title19-->
 	    <!-- 添加分类与标签 -->
 		
 		  
+			<img src="https://qiniu.findn.cn//blog/photos/article/image-20211213231234705.png" alt="Linux Kernel" style="zoom:100%;" />
+
+<p>好久没更新了，上周，我利用空闲时间设计了linux内核实验的指导书，现在我把实验过程分享给大家。</p>
+<p>本次实验的目标是自己动手裁剪并编译linux内核、制作最小根文件系统、并成功把制作的mini-linu启动起来，具体分为以下几步：</p>
+<ul>
+<li>下载Linux内核，裁剪并编译内核源码。</li>
+<li>下载并编译BusyBox，在此基础上制作一个最小的根文件系统。</li>
+<li>用编译好的内核和根文件系统制作可启动的mini-Linux系统。</li>
+<li>用QEMU启动制作好的mini-Linux系统。 </li>
+</ul>
 			
-<link rel="stylesheet" href="./static/ins.css">
-<div class="photos-btn-wrap">	
-  <a class="photos-btn" href="/photos/index.html">Photos</a>
-  <a class="photos-btn active" href="/photos/video.html">Videos</a>
-</div>
-
-
-<center>
-  <h1>李宏毅2021春机器学习课程</h1>
-</center>
-<hr>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0" >
-  <iframe src="//player.bilibili.com/player.html?aid=246993280&bvid=BV1Wv411h7kN&cid=303819228&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 90%; width: 100%; "></iframe>
-</div>
-
-<hr>
-<center>
-    <h1>《PyTorch深度学习实践》完结合集 —— 刘二大人</h1>
-</center>
-<hr>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=97078147&bvid=BV1Y7411d7Ys&cid=165713573&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 90%; width: 100%;"></iframe>
-</div>
-
-<hr>
-<center>
-    <h1>动手学深度学习v2 —— 李沐</h1>
-</center>
-<hr>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=714717789&bvid=BV1oX4y137bC&cid=313097645&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 90%; width: 100%;"></iframe>
-</div>
-
-
-		  
+			
 		  
 		
 		
@@ -385,62 +417,26 @@ https://ziyuan.baidu.com/college/courseinfo?id=267&page=2#h2_article_title19-->
       
 	  
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
 	  
       
-
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/8283904e.html">展开全文 >></a>
+        </p>
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-	  <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://sanshui.findn.cn/photos/video.html" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
 	  
       <div class="clearfix"></div>
@@ -450,80 +446,531 @@ https://ziyuan.baidu.com/college/courseinfo?id=267&page=2#h2_article_title19-->
 </article>
 
 
-  
 
 
 
+	<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
 
 
 
-
-
-  
-  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
-<div id="waline"></div>
-<script>
-	// 中文默认
-	const locale = {
-	  nick: ' 昵称: ',
-	  nickError: '昵称不能少于3个字符',
-	  mail: '邮箱: ',
-	  mailError: '请填写正确的邮件地址',
-	  link: '网址: ',
-	  placeholder: ' 客官留个言吧(◕ˇ∀ˇ◕)',
-	  sofa: '评论区空空荡荡，客官快来评论吧~',
-	  submit: '提交',
-	  reply: '回复',
-	  cancelReply: '取消回复',
-	  comment: '评论',
-	  more: '加载更多...',
-	  preview: '预览',
-	  emoji: '表情',
-	  uploadImage: '上传图片',
-	  seconds: '秒前',
-	  minutes: '分钟前',
-	  hours: '小时前',
-	  days: '天前',
-	  now: '刚刚',
-	  uploading: '正在上传',
-	  login: '登录',
-	  logout: '退出',
-	  admin: '博主',
-	  word: '字',
-	  wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
-	};
-
-	Waline({
-	  el: '#waline',
-	  serverURL: 'https://comment.findn.cn',
-	  locale,
-	  login: 'enable',
-	  lang: 'zh-CN ',
-	  dark: '',
-	  // 设置 emoji 为微博与哔哩哔哩
-	  emoji: [
-		'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
-		'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
-	  ],
-	  wordLimit: 0,
-	  pageSize: 10,
-	  copyright: false,
-	  uploadImage: false,
-	  avatar: 'mp',
-	  visitor: true,
-	  meta: ['nick', 'mail', 'link'],  //评论者相关属性，默认['nick', 'mail', 'link'],
-	  requiredMeta: ['nick'], //设置评论者属性必填项，默认[]（即匿名）
-	});
-</script>
-  
-  
-  
 
 
   
-
+    <article id="post-图像和视频篡改检测Manipulation Detection综述" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title_code_ant" href="/post/6473c150.html">图像和视频篡改检测Manipulation Detection综述</a>
+    </h1>
   
 
+        
+		
+		  <a href="/post/6473c150.html" class="archive-article-date">
+  	<time datetime="2021-10-28T10:54:29.269Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2021-10-28</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	
+    <!-- waline阅读量统计 -->
+	
+
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+      
+        <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #88ACDB;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">转载</span>
+		  &nbsp; 
+      
+    
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">24.6k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">97min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+	    <!-- 添加分类与标签 -->
+		
+		  
+			<ul>
+<li>数字图像篡改操作取证(Tamper )<ul>
+<li>Copy-move操作取证技术</li>
+<li>Inpainting操作取证技术</li>
+<li>Splicing操作取证技术</li>
+</ul>
+</li>
+<li>数字图像处理操作取证(Manipulation)<ul>
+<li>JPEG重压缩取证技术</li>
+<li>增强操作取证技术</li>
+<li>几何操作取证技术</li>
+<li>操作链取证技术</li>
+</ul>
+</li>
+<li>视频编辑篡改检测<ul>
+<li>数字视频再编辑篡改技术</li>
+<li>数字视频被动取证检测技术</li>
+</ul>
+</li>
+</ul>
+			
+			
+		  
+		
+		
+	  <!-- 添加版权声明 -->
+      
+      <!-- 添加版权声明结束 -->
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+	  
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">论文阅读</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">图像篡改</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+	  
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/6473c150.html">展开全文 >></a>
+        </p>
+      
+
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+
+
+	<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
+    <article id="post-图像篡改检测技术及数据集总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title_code_ant" href="/post/3f292744.html">图像篡改检测技术及数据集总结</a>
+    </h1>
+  
+
+        
+		
+		  <a href="/post/3f292744.html" class="archive-article-date">
+  	<time datetime="2021-10-28T05:02:35.854Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2021-10-28</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	
+    <!-- waline阅读量统计 -->
+	
+
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+      
+    
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">2.6k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">9min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+	    <!-- 添加分类与标签 -->
+		
+		  
+			<p>篡改在英文文献中常用<code>manipulation</code>、<code>tamper</code>、<code>forgery</code>这三个词表达。广义上的图像篡改指的是<strong>对原始图像做了改动的操作</strong>，这种改动操可以是：图像属性改变、图像格式转换、形态学处理、模糊处理、缩放剪裁（seam carving）等等。</p>
+<p>图像篡改类别可以粗略划分为<code>图像处理操作(manipulation)</code>和<code>图像篡改操作(tamper)</code>两类（按英文直译，manipulation是操作的意思，此类篡改有点类似仅对图像做非内容性的处理，而tamper按直译，则是对图像做了内容性的处理）：</p>
+<p><strong>Manipulation</strong>：滤波处理（如中值滤波 Median Filtering）、模糊处理（如高斯模糊 Gaussian Blurring）、添加噪声（如高斯白噪声 Additive White Gaussian Noise）、重采样（Resampling）、压缩处理（如JPEG压缩 JPEG Compression）等。</p>
+<p><strong>Tamper</strong> ：删除（Removal）、添加（Adding）、复制（Copy-move）、拼接（Splicing）等。</p>
+<p>图像篡改检测技术涉及以下领域:</p>
+<ul>
+<li>司法鉴定和公安办案中照片的真伪鉴定</li>
+<li>保险事故中照片的真伪鉴别</li>
+<li>新闻摄影和赛事照片的真伪鉴别</li>
+<li>电子交易票据图像的真伪鉴别</li>
+</ul>
+			
+			
+		  
+		
+		
+	  <!-- 添加版权声明 -->
+      
+      <!-- 添加版权声明结束 -->
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+	  
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">论文阅读</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">图像篡改</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+	  
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/3f292744.html">展开全文 >></a>
+        </p>
+      
+
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+
+
+	<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
+    <article id="post-从零开始搭建Hexo博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title_code_ant" href="/post/8d2d3001.html">从零开始搭建Hexo博客</a>
+    </h1>
+  
+
+        
+		
+		  <a href="/post/8d2d3001.html" class="archive-article-date">
+  	<time datetime="2021-10-22T13:12:44.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2021-10-22</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	
+    <!-- waline阅读量统计 -->
+	
+
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+      
+        <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #0088CC;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+		  &nbsp; 
+      
+    
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">916字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">3min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+	    <!-- 添加分类与标签 -->
+		
+		  
+			<p><img src="https://qiniu.findn.cn/blog/photos/article/blog.jpg" alt="blog"></p>
+<p>Hello，朋友，欢迎来到<a href="https://sanshui.findn.cn/">三水のBlog</a>，耗时2周的博客终于搭建好了，期间踩了不少坑，不过也学到了非常多的内容。</p>
+<p>第一篇博文就做一个博客搭建过程的全记录吧，按照我的步骤，你也可以从零搭建一个属于自己的博客，我将按照以下目录逐步更新搭建博客的过程，希望能帮到大家。</p>
+<ul>
+<li>Hexo相关<ul>
+<li>Hexo博客入门</li>
+<li>Hexo博客技巧</li>
+<li>Hexo主题推荐</li>
+</ul>
+</li>
+<li>Yilia主题相关<ul>
+<li>yilia主题bug修复</li>
+<li>yilia主题功能新增</li>
+<li>yilia 主题美化</li>
+</ul>
+</li>
+<li>Hexo博客性能优化及部署<ul>
+<li>hexo博客性能优化</li>
+<li>hexo博客部署及高阶技巧</li>
+</ul>
+</li>
+<li>SEO优化<ul>
+<li>让搜索引擎收录你的文章</li>
+<li>网站统计分析</li>
+</ul>
+</li>
+<li>工具分享<ul>
+<li>PicGo图床上传工具</li>
+<li>Typora文章编辑工具</li>
+</ul>
+</li>
+</ul>
+			
+			
+		  
+		
+		
+	  <!-- 添加版权声明 -->
+      
+      <!-- 添加版权声明结束 -->
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+	  
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+	  
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/8d2d3001.html">展开全文 >></a>
+        </p>
+      
+
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+
+
+	<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
   
 
 
@@ -623,7 +1070,7 @@ https://ziyuan.baidu.com/college/courseinfo?id=267&page=2#h2_article_title19-->
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: false,
+		isHome: true,
 		isPost: false,
 		isArchive: false,
 		isTag: false,
