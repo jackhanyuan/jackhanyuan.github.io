@@ -850,24 +850,24 @@ body {
 ::-webkit-scrollbar-button:start {
 	width:10px;
 	height:10px;
-	background:url(/img/scrollbar_arrow.png) no-repeat 0 0
+	background:url(/fonts/scrollbar_arrow.png) no-repeat 0 0
 }
 ::-webkit-scrollbar-button:start:hover {
-	background:url(/img/scrollbar_arrow.png) no-repeat -15px 0
+	background:url(/fonts/scrollbar_arrow.png) no-repeat -15px 0
 }
 ::-webkit-scrollbar-button:start:active {
-	background:url(/img/scrollbar_arrow.png) no-repeat -30px 0
+	background:url(/fonts/scrollbar_arrow.png) no-repeat -30px 0
 }
 ::-webkit-scrollbar-button:end {
 	width:10px;
 	height:10px;
-	background:url(/img/scrollbar_arrow.png) no-repeat 0 -18px
+	background:url(/fonts/scrollbar_arrow.png) no-repeat 0 -18px
 }
 ::-webkit-scrollbar-button:end:hover {
-	background:url(/img/scrollbar_arrow.png) no-repeat -15px -18px
+	background:url(/fonts/scrollbar_arrow.png) no-repeat -15px -18px
 }
 ::-webkit-scrollbar-button:end:active {
-	background:url(/img/scrollbar_arrow.png) no-repeat -30px -18px
+	background:url(/fonts/scrollbar_arrow.png) no-repeat -30px -18px
 }
 .article-entry .highlight,.article-entry pre {
 	background:#272822;
@@ -3031,7 +3031,7 @@ to {
 	opacity:1
 }
 .pswp__button,.pswp__button--arrow--left:before,.pswp__button--arrow--right:before {
-	background:url(/img/default-skin.png) 0 0 no-repeat;
+	background:url(/fonts/default-skin.png) 0 0 no-repeat;
 	background-size:264px 88px;
 	width:44px;
 	height:44px
@@ -3259,7 +3259,7 @@ a.pswp__share--download:hover {
 	opacity:1
 }
 .pswp__preloader--active .pswp__preloader__icn {
-	background:url(img/preloader.gif) 0 0 no-repeat
+	background:url(/fonts/preloader.gif) 0 0 no-repeat
 }
 .pswp--css_animation .pswp__preloader--active {
 	opacity:1
