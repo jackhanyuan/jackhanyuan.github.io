@@ -2483,7 +2483,7 @@ to {
 }
 .tooltip-top .tooltip {
 	display:inline;
-	position:relative;
+	/*position:relative;*/
 	z-index:999
 }
 .tooltip-top .tooltip:after {
