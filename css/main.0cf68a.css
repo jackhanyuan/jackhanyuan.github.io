@@ -2211,7 +2211,7 @@ to {
 	opacity:.3
 }
 .page-reward {
-	margin:60px 0;
+	margin:50px 0;
 	text-align:center
 }
 .page-reward .page-reward-btn {
@@ -2266,7 +2266,7 @@ to {
 }
 .wrap-side-operation {
 	position:fixed;
-	right:40px;
+	right:30px;
 	bottom:50px;
 	z-index:99999;
 	font-size:14px
@@ -3720,5 +3720,46 @@ to {
     align-items: center;
 }
 
+/* reward */
+#reward-container {
+  padding: 2rem 0;
+  margin: auto;
+  text-align: center;
+}
+#reward-button {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(45deg, #c053f7, #23a2ed);
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  transition: .4s ease-in-out;
+}
 
+#reward-comment {
+  margin-top: 1rem;
+}
+#qr img {
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+  margin: 1rem 1rem 0.5rem 1rem;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+#qr img:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
 
+.icon-cursor {
+  cursor: pointer;
+}

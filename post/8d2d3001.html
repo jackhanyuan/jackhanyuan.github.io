@@ -390,11 +390,12 @@ var _hmt = _hmt || [];
 		
       </header>
     
+	
     <div class="article-entry" itemprop="articleBody">
-	    <!-- 添加分类与标签 -->
-		
+	  <!-- 添加分类与标签 -->
+	  
 		  
-			<p><img src="https://qiniu.findn.cn/blog/photos/article/blog.jpg" alt="blog"></p>
+		  <p><img src="https://qiniu.findn.cn/blog/photos/article/blog.jpg" alt="blog"></p>
 <p>Hello，朋友，欢迎来到<a href="https://sanshui.findn.cn/">三水のBlog</a>，耗时2周的博客终于搭建好了，期间踩了不少坑，不过也学到了非常多的内容。</p>
 <p>第一篇博文就做一个博客搭建过程的全记录吧，按照我的步骤，你也可以从零搭建一个属于自己的博客，我将按照以下目录逐步更新搭建博客的过程，希望能帮到大家。</p>
 <ul>
@@ -523,10 +524,37 @@ var _hmt = _hmt || [];
 <li>toc目录跳转和Aplayer冲突</li>
 </ul>
 
-		  
-		  
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+		<!-- reward type 1 -->
 		
 		
+		<!-- reward type 2 -->
+		
+		  <div id="reward-container">
+		    <span class="icon-cursor" title="打赏" id="reward-button"
+			  onclick='var qr = document.getElementById("qr"); qr.style.display = (qr.style.display === "none") ? "block" : "none";'
+			  ><a style="color:#fff;">赏</a></span>
+		    <div id="reward-comment"><i class="icon icon-quo-left"></i>&nbsp;感觉不错 支持一下&nbsp;<i class="icon icon-quo-right"></i></div>
+		  
+		    <div id="qr" style="display: none;">
+			  <div style="display:inline-block">
+			    <img loading="lazy" src="https://qiniu.findn.cn/blog/photos/static/alipay.png" alt="支付宝" title="支付宝"/>
+			    <div><span class="reward-type">支付宝</span></div>
+			  </div>
+			
+			  <div style="display:inline-block">
+			    <img loading="lazy" src="https://qiniu.findn.cn/blog/photos/static/wechatpay.png" alt="微信支付" title="微信支付"/>
+			    <div><span class="reward-type">微信</span></div>
+			  </div>
+		    </div>
+	      </div>
+	    
+      
+	
 	  <!-- 添加版权声明 -->
       
         <!-- 添加版权声明 -->
@@ -564,44 +592,14 @@ var _hmt = _hmt || [];
 </div>
 <!-- 添加版权声明 -->
       
-      <!-- 添加版权声明结束 -->
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top" target="">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>感谢您的支持<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="https://qiniu.findn.cn/blog/photos/static/alipay.png">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="https://qiniu.findn.cn/blog/photos/static/wechatpay.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
     <div class="article-info article-info-index">
       
 	  
+	  <!-- 分类页 -->
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
@@ -621,8 +619,10 @@ var _hmt = _hmt || [];
       
 
 	  
+	  <!-- 添加展开全文 -->
       
-
+	  
+	  <!-- 添加分享 -->
       
         
 <div class="share-btn share-icons tooltip-left">
@@ -700,40 +700,34 @@ var _hmt = _hmt || [];
 
 
 
-
-
-	<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+      <div class="toc-container tooltip-left">
+        <i class="icon-font icon-category"></i>
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item"></span>
+          <span class="tooltip-content">
+			<span style="font-size: 20px;font-weight: bold;">目录</span>
+            <div class="toc-article">
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo%E7%9B%B8%E5%85%B3"><span class="toc-number">1.</span> <span class="toc-text">Hexo相关</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo%E5%8D%9A%E5%AE%A2%E5%85%A5%E9%97%A8"><span class="toc-number">1.1.</span> <span class="toc-text">Hexo博客入门</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo%E5%8D%9A%E5%AE%A2%E6%8A%80%E5%B7%A7"><span class="toc-number">1.2.</span> <span class="toc-text">Hexo博客技巧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90"><span class="toc-number">1.3.</span> <span class="toc-text">Hexo主题推荐</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Yilia%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3"><span class="toc-number">2.</span> <span class="toc-text">Yilia主题相关</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Yilia%E4%B8%BB%E9%A2%98bug%E4%BF%AE%E5%A4%8D"><span class="toc-number">2.1.</span> <span class="toc-text">Yilia主题bug修复</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Yilia%E4%B8%BB%E9%A2%98%E5%8A%9F%E8%83%BD%E6%96%B0%E5%A2%9E"><span class="toc-number">2.2.</span> <span class="toc-text">Yilia主题功能新增</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Yilia-%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96"><span class="toc-number">2.3.</span> <span class="toc-text">Yilia 主题美化</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo%E5%8D%9A%E5%AE%A2%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%8F%8A%E9%83%A8%E7%BD%B2"><span class="toc-number">3.</span> <span class="toc-text">Hexo博客性能优化及部署</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo%E5%8D%9A%E5%AE%A2%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96"><span class="toc-number">3.1.</span> <span class="toc-text">hexo博客性能优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%8F%8A%E9%AB%98%E9%98%B6%E6%8A%80%E5%B7%A7"><span class="toc-number">3.2.</span> <span class="toc-text">hexo博客部署及高阶技巧</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SEO%E4%BC%98%E5%8C%96"><span class="toc-number">4.</span> <span class="toc-text">SEO优化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A9%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95%E4%BD%A0%E7%9A%84%E6%96%87%E7%AB%A0"><span class="toc-number">4.1.</span> <span class="toc-text">让搜索引擎收录你的文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90"><span class="toc-number">4.2.</span> <span class="toc-text">网站统计分析</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B6%E5%AE%83"><span class="toc-number">5.</span> <span class="toc-text">其它</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB"><span class="toc-number">5.1.</span> <span class="toc-text">工具分享</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%B2%E7%9F%A5bug"><span class="toc-number">5.2.</span> <span class="toc-text">已知bug</span></a></li></ol></li></ol>
             </div>
+          </span>
         </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-					<span style="font-size: 20px;font-weight: bold;">目录</span>
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo%E7%9B%B8%E5%85%B3"><span class="toc-number">1.</span> <span class="toc-text">Hexo相关</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo%E5%8D%9A%E5%AE%A2%E5%85%A5%E9%97%A8"><span class="toc-number">1.1.</span> <span class="toc-text">Hexo博客入门</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo%E5%8D%9A%E5%AE%A2%E6%8A%80%E5%B7%A7"><span class="toc-number">1.2.</span> <span class="toc-text">Hexo博客技巧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90"><span class="toc-number">1.3.</span> <span class="toc-text">Hexo主题推荐</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Yilia%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3"><span class="toc-number">2.</span> <span class="toc-text">Yilia主题相关</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Yilia%E4%B8%BB%E9%A2%98bug%E4%BF%AE%E5%A4%8D"><span class="toc-number">2.1.</span> <span class="toc-text">Yilia主题bug修复</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Yilia%E4%B8%BB%E9%A2%98%E5%8A%9F%E8%83%BD%E6%96%B0%E5%A2%9E"><span class="toc-number">2.2.</span> <span class="toc-text">Yilia主题功能新增</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Yilia-%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96"><span class="toc-number">2.3.</span> <span class="toc-text">Yilia 主题美化</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo%E5%8D%9A%E5%AE%A2%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%8F%8A%E9%83%A8%E7%BD%B2"><span class="toc-number">3.</span> <span class="toc-text">Hexo博客性能优化及部署</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo%E5%8D%9A%E5%AE%A2%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96"><span class="toc-number">3.1.</span> <span class="toc-text">hexo博客性能优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%8F%8A%E9%AB%98%E9%98%B6%E6%8A%80%E5%B7%A7"><span class="toc-number">3.2.</span> <span class="toc-text">hexo博客部署及高阶技巧</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SEO%E4%BC%98%E5%8C%96"><span class="toc-number">4.</span> <span class="toc-text">SEO优化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A9%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%94%B6%E5%BD%95%E4%BD%A0%E7%9A%84%E6%96%87%E7%AB%A0"><span class="toc-number">4.1.</span> <span class="toc-text">让搜索引擎收录你的文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90"><span class="toc-number">4.2.</span> <span class="toc-text">网站统计分析</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B6%E5%AE%83"><span class="toc-number">5.</span> <span class="toc-text">其它</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB"><span class="toc-number">5.1.</span> <span class="toc-text">工具分享</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%B2%E7%9F%A5bug"><span class="toc-number">5.2.</span> <span class="toc-text">已知bug</span></a></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
+      </div>
+	
+  </div>
 </aside>
 
-
-
+<!-- 添加评论 -->
 
 
   
@@ -1036,15 +1030,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">论文阅读</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">图像篡改</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
               <li class="article-tag-list-item">

@@ -402,11 +402,12 @@ var _hmt = _hmt || [];
 		
       </header>
     
+	
     <div class="article-entry" itemprop="articleBody">
-	    <!-- 添加分类与标签 -->
-		
+	  <!-- 添加分类与标签 -->
+	  
 		  
-			<img src="https://qiniu.findn.cn//blog/photos/article/image-20211213231234705.png" alt="Linux Kernel" style="zoom:100%;" />
+		  <img src="https://qiniu.findn.cn//blog/photos/article/image-20211213231234705.png" alt="Linux Kernel" style="zoom:100%;" />
 
 <p>好久没更新了，上周，我利用空闲时间设计了linux内核实验的指导书，现在我把实验过程分享给大家。</p>
 <p>本次实验的目标是自己动手裁剪并编译linux内核、制作最小根文件系统、并成功把制作的mini-linu启动起来，具体分为以下几步：</p>
@@ -577,10 +578,37 @@ var _hmt = _hmt || [];
 
 <p>Linux 内核裁剪及编译教程就到这里，下一部分是用busybox制作一个最小的根文件系统，敬请关注！</p>
 
-		  
-		  
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+		<!-- reward type 1 -->
 		
 		
+		<!-- reward type 2 -->
+		
+		  <div id="reward-container">
+		    <span class="icon-cursor" title="打赏" id="reward-button"
+			  onclick='var qr = document.getElementById("qr"); qr.style.display = (qr.style.display === "none") ? "block" : "none";'
+			  ><a style="color:#fff;">赏</a></span>
+		    <div id="reward-comment"><i class="icon icon-quo-left"></i>&nbsp;感觉不错 支持一下&nbsp;<i class="icon icon-quo-right"></i></div>
+		  
+		    <div id="qr" style="display: none;">
+			  <div style="display:inline-block">
+			    <img loading="lazy" src="https://qiniu.findn.cn/blog/photos/static/alipay.png" alt="支付宝" title="支付宝"/>
+			    <div><span class="reward-type">支付宝</span></div>
+			  </div>
+			
+			  <div style="display:inline-block">
+			    <img loading="lazy" src="https://qiniu.findn.cn/blog/photos/static/wechatpay.png" alt="微信支付" title="微信支付"/>
+			    <div><span class="reward-type">微信</span></div>
+			  </div>
+		    </div>
+	      </div>
+	    
+      
+	
 	  <!-- 添加版权声明 -->
       
         <!-- 添加版权声明 -->
@@ -618,44 +646,14 @@ var _hmt = _hmt || [];
 </div>
 <!-- 添加版权声明 -->
       
-      <!-- 添加版权声明结束 -->
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top" target="">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>感谢您的支持<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="https://qiniu.findn.cn/blog/photos/static/alipay.png">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="https://qiniu.findn.cn/blog/photos/static/wechatpay.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
     <div class="article-info article-info-index">
       
 	  
+	  <!-- 分类页 -->
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
@@ -671,8 +669,10 @@ var _hmt = _hmt || [];
       
 
 	  
+	  <!-- 添加展开全文 -->
       
-
+	  
+	  <!-- 添加分享 -->
       
         
 <div class="share-btn share-icons tooltip-left">
@@ -746,40 +746,34 @@ var _hmt = _hmt || [];
 
 
 
-
-
-	<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+      <div class="toc-container tooltip-left">
+        <i class="icon-font icon-category"></i>
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item"></span>
+          <span class="tooltip-content">
+			<span style="font-size: 20px;font-weight: bold;">目录</span>
+            <div class="toc-article">
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E5%86%85%E6%A0%B8%E6%BA%90%E7%A0%81"><span class="toc-number">1.</span> <span class="toc-text">下载内核源码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%86%85%E6%A0%B8"><span class="toc-number">2.</span> <span class="toc-text">配置内核</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%85%E6%A0%B8%E8%A3%81%E5%89%AA"><span class="toc-number">3.</span> <span class="toc-text">内核裁剪</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%96%E8%AF%91%E5%86%85%E6%A0%B8"><span class="toc-number">4.</span> <span class="toc-text">编译内核</span></a></li></ol>
             </div>
+          </span>
         </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-					<span style="font-size: 20px;font-weight: bold;">目录</span>
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E5%86%85%E6%A0%B8%E6%BA%90%E7%A0%81"><span class="toc-number">1.</span> <span class="toc-text">下载内核源码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%86%85%E6%A0%B8"><span class="toc-number">2.</span> <span class="toc-text">配置内核</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%85%E6%A0%B8%E8%A3%81%E5%89%AA"><span class="toc-number">3.</span> <span class="toc-text">内核裁剪</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%96%E8%AF%91%E5%86%85%E6%A0%B8"><span class="toc-number">4.</span> <span class="toc-text">编译内核</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
+      </div>
+	
+  </div>
 </aside>
 
-
-
+<!-- 添加评论 -->
 
 
   
@@ -1082,15 +1076,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">论文阅读</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">图像篡改</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
               <li class="article-tag-list-item">
