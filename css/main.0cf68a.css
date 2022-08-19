@@ -3744,10 +3744,10 @@ to {
   margin-top: 1rem;
 }
 #qr img {
-  width: 10rem;
-  height: 10rem;
+  width: 9rem;
+  height: 9rem;
   display: inline-block;
-  margin: 1rem 1rem 0.5rem 1rem;
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
