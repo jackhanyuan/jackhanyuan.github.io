@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sanshui.findn.cn/archives/index.html</loc>
+    
+    <lastmod>2022-11-22</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://sanshui.findn.cn/post/8d2d3001.html</loc>
     
     <lastmod>2022-11-22</lastmod>
@@ -85,13 +92,6 @@
     
   </url>
   
-  <url>
-    <loc>https://sanshui.findn.cn/archives/index.html</loc>
-    
-    <lastmod>2021-10-07</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://sanshui.findn.cn/</loc>
@@ -167,14 +167,14 @@
   </url>
   
   <url>
-    <loc>https://sanshui.findn.cn/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/%E5%9B%BE%E5%83%8F%E7%AF%A1%E6%94%B9/</loc>
+    <loc>https://sanshui.findn.cn/categories/%E7%AE%97%E6%B3%95%E5%88%B7%E9%A2%98/</loc>
     <lastmod>2022-11-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://sanshui.findn.cn/categories/%E7%AE%97%E6%B3%95%E5%88%B7%E9%A2%98/</loc>
+    <loc>https://sanshui.findn.cn/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/%E5%9B%BE%E5%83%8F%E7%AF%A1%E6%94%B9/</loc>
     <lastmod>2022-11-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
