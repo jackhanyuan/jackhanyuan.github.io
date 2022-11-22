@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>三水のBlog</title>
+  <title>三水のBlog - 程序员Sanshui的博客</title>
   
   <subtitle>热爱代码 更爱生活</subtitle>
   <link href="https://sanshui.findn.cn/atom.xml" rel="self"/>
