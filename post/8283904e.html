@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image12.png">
 <meta property="og:image" content="https://qiniu.findn.cn//blog/photos/article/image13.png">
 <meta property="article:published_time" content="2021-12-13T12:47:44.000Z">
-<meta property="article:modified_time" content="2022-08-14T08:58:40.903Z">
+<meta property="article:modified_time" content="2022-11-22T03:17:31.752Z">
 <meta property="article:author" content="三水">
 <meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
@@ -432,7 +432,7 @@ var _hmt = _hmt || [];
 <blockquote>
 <p>Linux的内核是单内核设计风格的，不过Linux的单内核设计采用了微内核设计风格的模块化设计思想，所以使得内核的核心可以很小，而内核所需要提供的其他功能都被设计成了各种内核模块，需要的时候只需将各种内核模块加载进内核的核心即可，我们可以通过编辑Linux源码目录下的”.config”配置文件来裁剪定制linux内核，在此次实验中，我们主要通过“make menuconfig”命令打开图形化界面来配置“.config”文件。</p>
 </blockquote>
-<h1 id="下载内核源码"><a href="#下载内核源码" class="headerlink" title="下载内核源码"></a>下载内核源码</h1><p>（1）Linux内核官网：<a target="_blank" rel="noopener" href="https://www.kernel.org/">https://www.kernel.org/</a>。</p>
+<h2 id="下载内核源码"><a href="#下载内核源码" class="headerlink" title="下载内核源码"></a>下载内核源码</h2><p>（1）Linux内核官网：<a target="_blank" rel="noopener" href="https://www.kernel.org/">https://www.kernel.org/</a>。</p>
 <p>本次实验我们使用的内核版本为长期支持版本<code>5.10.83</code>，下载链接如下：<a target="_blank" rel="noopener" href="https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.83.tar.xz">https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.83.tar.xz</a>。</p>
 <img src="https://qiniu.findn.cn//blog/photos/article/image-20211214002141124.png" alt="kernel.org"  />
 
@@ -451,7 +451,7 @@ var _hmt = _hmt || [];
 <li>make mrproper：删除包括配置文件的所有构建文件。</li>
 <li>make distclean：执行mrproper所做的一切，并删除备份文件。</li>
 </ul>
-<h1 id="配置内核"><a href="#配置内核" class="headerlink" title="配置内核"></a>配置内核</h1><p>（1）指定硬件体系架构为<code>x86</code>。</p>
+<h2 id="配置内核"><a href="#配置内核" class="headerlink" title="配置内核"></a>配置内核</h2><p>（1）指定硬件体系架构为<code>x86</code>。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> ARCH=x86  </span><br></pre></td></tr></table></figure>
 
 <p>（2）生成config文件。</p>
@@ -519,7 +519,7 @@ var _hmt = _hmt || [];
 <p>​    [1]. <a target="_blank" rel="noopener" href="https://blog.csdn.net/liao20081228/article/details/81389813">Linux内核（4.17.10）配置项详解（x86）</a></p>
 <p>​    [2]. <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43892506/article/details/117885040">kernel裁剪</a></p>
 <p>​    [3]. <a target="_blank" rel="noopener" href="https://blog.csdn.net/u011124985/article/details/80453772">linux内核裁剪的具体过程和方法</a></p>
-<h1 id="内核裁剪"><a href="#内核裁剪" class="headerlink" title="内核裁剪"></a>内核裁剪</h1><p>通过内核裁剪，我们可以</p>
+<h2 id="内核裁剪"><a href="#内核裁剪" class="headerlink" title="内核裁剪"></a>内核裁剪</h2><p>通过内核裁剪，我们可以</p>
 <ul>
 <li><p>学习内核裁剪的方法和流程。</p>
 </li>
@@ -565,7 +565,7 @@ var _hmt = _hmt || [];
 <p>在所有需要的选项配置完毕之后，按Exit退出，选择Yes保存。</p>
 <img src="https://qiniu.findn.cn//blog/photos/article/image12.png" alt="保存并退出内核配置" style="zoom: 67%;" />
 
-<h1 id="编译内核"><a href="#编译内核" class="headerlink" title="编译内核"></a>编译内核</h1><p>（1）下面就可以开始编译内核了：</p>
+<h2 id="编译内核"><a href="#编译内核" class="headerlink" title="编译内核"></a>编译内核</h2><p>（1）下面就可以开始编译内核了：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make -j8</span><br></pre></td></tr></table></figure>
 
 <p>make命令后面跟着线程数，8表示使用8线程去执行，不要超过虚拟机系统配置的核心数。</p>
@@ -626,7 +626,7 @@ var _hmt = _hmt || [];
 	
 	<br>
 	<strong class="update-time">最后更新：</strong>
-	2022年08月14日 16:58:40
+	2022年11月22日 11:17:31
 	
 	<!-- <br>
 	<strong class="article-titles">本文标题：</strong>
@@ -773,7 +773,7 @@ var _hmt = _hmt || [];
           <span class="tooltip-content">
 			<span style="font-size: 20px;font-weight: bold;">目录</span>
             <div class="toc-article">
-              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E5%86%85%E6%A0%B8%E6%BA%90%E7%A0%81"><span class="toc-number">1.</span> <span class="toc-text">下载内核源码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%86%85%E6%A0%B8"><span class="toc-number">2.</span> <span class="toc-text">配置内核</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%85%E6%A0%B8%E8%A3%81%E5%89%AA"><span class="toc-number">3.</span> <span class="toc-text">内核裁剪</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%96%E8%AF%91%E5%86%85%E6%A0%B8"><span class="toc-number">4.</span> <span class="toc-text">编译内核</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E5%86%85%E6%A0%B8%E6%BA%90%E7%A0%81"><span class="toc-number">1.</span> <span class="toc-text">下载内核源码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%86%85%E6%A0%B8"><span class="toc-number">2.</span> <span class="toc-text">配置内核</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E6%A0%B8%E8%A3%81%E5%89%AA"><span class="toc-number">3.</span> <span class="toc-text">内核裁剪</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E8%AF%91%E5%86%85%E6%A0%B8"><span class="toc-number">4.</span> <span class="toc-text">编译内核</span></a></li></ol>
             </div>
           </span>
         </div>
@@ -873,7 +873,7 @@ var _hmt = _hmt || [];
 		<span> 6 篇</span>
 		<span class="post-meta-divider">|</span>
 		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-		<span> <span class="post-count">32k</span></span>
+		<span> <span class="post-count">32.7k</span></span>
       </div>
 	  
 	  <!-- 添加不蒜子统计 -->

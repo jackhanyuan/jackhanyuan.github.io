@@ -27,7 +27,7 @@
 <meta property="og:image" content="https://qiniu.findn.cn/blog/photos/article/Fr-Jmx8q_wE7e3EVP6JH5ZwEgEVk">
 <meta property="og:image" content="https://qiniu.findn.cn/blog/photos/article/Fk-_XfgIrmSXAmGnahiX8GARxPqz">
 <meta property="article:published_time" content="2021-10-28T05:02:35.854Z">
-<meta property="article:modified_time" content="2022-08-14T08:16:50.413Z">
+<meta property="article:modified_time" content="2022-11-22T03:20:49.844Z">
 <meta property="article:author" content="三水">
 <meta property="article:tag" content="论文阅读">
 <meta property="article:tag" content="图像篡改">
@@ -407,7 +407,7 @@ var _hmt = _hmt || [];
 </ul>
 <span id="more"></span>
 
-<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>篡改检测问题实际上就是要检测出图像当中做过<strong>改动的区域</strong>。近几年，学术上更趋于集中研究splicing、copy-move、removal这三个类型图像篡改的检测问题。</p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>篡改检测问题实际上就是要检测出图像当中做过<strong>改动的区域</strong>。近几年，学术上更趋于集中研究splicing、copy-move、removal这三个类型图像篡改的检测问题。</p>
 <img src="https://qiniu.findn.cn/blog/photos/article/篡改检测-分类.jpg"  alt="篡改检测-分类" style="zoom: 33%;" />
 
 <p>如上图：</p>
@@ -419,7 +419,7 @@ var _hmt = _hmt || [];
 <img src="https://qiniu.findn.cn/blog/photos/article/篡改检测-人脸和文字.jpg" alt="篡改检测-人脸和文字" style="zoom: 33%;" />
 
 <p>此外，对图像篡改检测的研究也有专门只针对人脸和文字的，上图上幅来自<a target="_blank" rel="noopener" href="https://arxiv.org/abs/1803.09179">Andreas Rossler et al., 2018</a>，是专门针对人脸篡改的检测；下幅来自<a target="_blank" rel="noopener" href="https://arxiv.org/abs/1810.08016">Yulia S. Chernyshova et al., 2018</a>，是专门针对文字篡改的检测。</p>
-<h1 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h1><table>
+<h2 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h2><table>
 <thead>
 <tr>
 <th>数据集</th>
@@ -473,7 +473,7 @@ var _hmt = _hmt || [];
 </tr>
 </tbody></table>
 <p>百度网盘链接：（包含 NIST, COVERAGE, Columbia）<br>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Rn18JLDV7WviUvP8UsRZVQ">https://pan.baidu.com/s/1Rn18JLDV7WviUvP8UsRZVQ</a><br>提取码：ptur </p>
-<h1 id="Related-Work"><a href="#Related-Work" class="headerlink" title="Related Work"></a>Related Work</h1><p>人类在识别复制移动方面可能比检测拼接和移除更好。这是因为在复制移动图像中，人眼可以感觉到类似物体的重复。对于拼接和移除图像，人类在很大程度上依靠寻找明显的边缘不连续和照明不一致来确定是否发生了篡改。因此，当在经过良好篡改的图像中视觉上看不到不一致之处时，人类将无法检测到篡改。之前传统的图像处理方法提出了探索边缘不连续和照明不一致性的算法，以协助并超越人类在篡改检测任务中的能力。</p>
+<h2 id="Related-Work"><a href="#Related-Work" class="headerlink" title="Related Work"></a>Related Work</h2><p>人类在识别复制移动方面可能比检测拼接和移除更好。这是因为在复制移动图像中，人眼可以感觉到类似物体的重复。对于拼接和移除图像，人类在很大程度上依靠寻找明显的边缘不连续和照明不一致来确定是否发生了篡改。因此，当在经过良好篡改的图像中视觉上看不到不一致之处时，人类将无法检测到篡改。之前传统的图像处理方法提出了探索边缘不连续和照明不一致性的算法，以协助并超越人类在篡改检测任务中的能力。</p>
 <p>当前深度学习的图像篡改区域定位方法主要有以下三种方向：</p>
 <ul>
 <li>将篡改区域定位认为是像素级的二分类，采用图像分割的算法来定位篡改区域。</li>
@@ -481,7 +481,7 @@ var _hmt = _hmt || [];
 <li>将篡改区域定位当作是局部异常检测，采用CNN + LSTM网络检测图像中的局部异常。</li>
 </ul>
 <p>接下来总结近几年这三个方向具有代表性的图像篡改区域定位方法。</p>
-<h2 id="RGB-N"><a href="#RGB-N" class="headerlink" title="RGB-N"></a>RGB-N</h2><p><strong>Learning Rich Features for Image Manipulation Detection</strong></p>
+<h3 id="RGB-N"><a href="#RGB-N" class="headerlink" title="RGB-N"></a>RGB-N</h3><p><strong>Learning Rich Features for Image Manipulation Detection</strong></p>
 <p>发表在：CVPR 2018</p>
 <p>论文：<a target="_blank" rel="noopener" href="https://arxiv.org/abs/1805.04953">https://arxiv.org/abs/1805.04953</a></p>
 <p>代码：<a target="_blank" rel="noopener" href="https://github.com/LarryJiang134/Image_manipulation_detection">https://github.com/LarryJiang134/Image_manipulation_detection</a></p>
@@ -496,7 +496,7 @@ var _hmt = _hmt || [];
 <ul>
 <li>该方法利用篡改区域与原图噪声不一致的线索，提出了<strong>双流Fast RCNN</strong>，这种方法的优势在于其具有很好的鲁棒性，这是由于<strong>当篡改者利用JEPG压缩或者resize</strong>隐藏时，噪声不一致的线索会更加突显出来，因此其具有很好的鲁棒性和抗干扰的能力。作者在文中分享了这一方法的局限也就是<strong>在复制移动的篡改方式下表现不太好</strong>，其原因有两个方面，首先，复制的区域来自同一张图像，这产生了相似的噪声分布，从而混淆了的噪声流。并且，两个区域通常具有相同的对比度。</li>
 </ul>
-<h2 id="ManTra-Net"><a href="#ManTra-Net" class="headerlink" title="ManTra-Net"></a>ManTra-Net</h2><p><strong>ManTra-Net: Manipulation Tracing Network For Detection And Localization of Image Forgeries With Anomalous Features</strong></p>
+<h3 id="ManTra-Net"><a href="#ManTra-Net" class="headerlink" title="ManTra-Net"></a>ManTra-Net</h3><p><strong>ManTra-Net: Manipulation Tracing Network For Detection And Localization of Image Forgeries With Anomalous Features</strong></p>
 <p>发表在：CVPR2019</p>
 <p>论文：<a target="_blank" rel="noopener" href="https://openaccess.thecvf.com/content_CVPR_2019/html/Wu_ManTra-Net_Manipulation_Tracing_Network_for_Detection_and_Localization_of_Image_CVPR_2019_paper.html">https://openaccess.thecvf.com/content_CVPR_2019/html/Wu_ManTra-Net_Manipulation_Tracing_Network_for_Detection_and_Localization_of_Image_CVPR_2019_paper.html</a></p>
 <p>代码：<a target="_blank" rel="noopener" href="https://github.com/ISICV/ManTraNet">https://github.com/ISICV/ManTraNet</a></p>
@@ -512,19 +512,19 @@ var _hmt = _hmt || [];
 <li>ManTra-Net 的创新之处在于设计了一个简单而有效的<strong>自我监督学习任务</strong>，以通过对385种图像操作类型进行分类来学习强大的图像操作轨迹。此外，我们<strong>将伪造定位问题公式化为局部异常检测问题，设计Z分数功能以捕获局部异常</strong>。ManTra-Net的优点主要在于它对于绝大多数的篡改攻击方式的有效果，因为它利用了自监督学习篡改的类型，因此有效的检测多种篡改方式，并且具有不错的鲁棒性，可以说是每个方式都有优势，但单独一种方式下不一定是最优的方法。</li>
 </ul>
 <p>​    </p>
-<h2 id="RRU-Net"><a href="#RRU-Net" class="headerlink" title="RRU-Net"></a>RRU-Net</h2><p><strong>RRU-Net: The Ringed Residual U-Net for Image Splicing Forgery Detection</strong></p>
+<h3 id="RRU-Net"><a href="#RRU-Net" class="headerlink" title="RRU-Net"></a>RRU-Net</h3><p><strong>RRU-Net: The Ringed Residual U-Net for Image Splicing Forgery Detection</strong></p>
 <p>发表在：CVPRW 2019<br>论文：<a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/9025485">https://ieeexplore.ieee.org/document/9025485</a><br>代码：<a target="_blank" rel="noopener" href="https://github.com/yelusaleng/RRU-Net">https://github.com/yelusaleng/RRU-Net</a><br>类型：拼接<br>方法：作者基于 U-Net 提出了一种环状残差网络 RRU-Net 用于图像拼接伪造检测。<strong>RRU-Net 是一个端到端的图像本质属性分割网络</strong>，无需任何预处理和后处理即可完成伪造区域检测。RRU-Net 的核心思想是加强 CNN 的学习方式，并由CNN中残差的传播和反馈过程实现。残差传播调用输入的特征信息以解决更深层网络中的梯度退化问题；残差反馈合并输入特征信息，使未篡改区域和篡改区域之间的图像属性差异更加明显。<br><img src="https://qiniu.findn.cn/blog/photos/article/Ft7ySxL1_DlI0SGPRrEoDSACPhPi" alt="RRU-Net" style="zoom:80%;"/></p>
 <p>实验结果：RRU-NET 在 CASIA1.0 和 COLUMB 两个伪造图像数据集上的实验结果，CASIA 1.0 包括的篡改方式有拼接和复制粘贴攻击方式，但是本文只选取了其中的拼接攻击方式的数据集。COLUMB 是只包含拼接攻击的数据集。<br><img src="https://qiniu.findn.cn/blog/photos/article/Fr-Jmx8q_wE7e3EVP6JH5ZwEgEVk" alt="RRU-Net" style="zoom:80%;"/></p>
 <p><strong>简评：</strong></p>
 <ul>
 <li>RRU-Net的主要创新体现在 Ringed Residual Structure，与其它方法不同是 RRU-Net 不直接设置检测伪造图像痕迹的特征，而是通过 residual feedback 机制让 CNN 自己去学习图片属性的差异特征，属于一种强化 CNN 学习的方法，并且经过实验证明了这种利用残差反馈方式自动学习图片属性差异的特征是有效的。</li>
 </ul>
-<h1 id="比赛"><a href="#比赛" class="headerlink" title="比赛"></a>比赛</h1><h2 id="天池-伪造图像的篡改检测-长期赛"><a href="#天池-伪造图像的篡改检测-长期赛" class="headerlink" title="天池 - 伪造图像的篡改检测 - 长期赛"></a><a target="_blank" rel="noopener" href="https://tianchi.aliyun.com/competition/entrance/531812/information"><strong>天池 - 伪造图像的篡改检测 - 长期赛</strong></a></h2><p><strong>赛题背景</strong></p>
+<h2 id="比赛"><a href="#比赛" class="headerlink" title="比赛"></a>比赛</h2><h3 id="天池-伪造图像的篡改检测-长期赛"><a href="#天池-伪造图像的篡改检测-长期赛" class="headerlink" title="天池 - 伪造图像的篡改检测 - 长期赛"></a><a target="_blank" rel="noopener" href="https://tianchi.aliyun.com/competition/entrance/531812/information"><strong>天池 - 伪造图像的篡改检测 - 长期赛</strong></a></h3><p><strong>赛题背景</strong></p>
 <p>本次比赛的背景是由于随着各种P图工具的普及，篡改伪造出视觉无痕迹的假图门槛大幅降低，于是我们看到大量的假图用于散播谣言、编造虚假新闻、非法获取经济利益，更有甚者，还可能会被用来恶意地充当法庭证据。因此需要设计出能够准确检测出图像篡改区域的算法，避免假图造成的危害。</p>
 <p><strong>题目描述</strong></p>
 <p>比赛采用的数据为证书文档类图像，其中包括10类不同图像。</p>
 <p>比赛的任务是通过提供的训练集学习出有效的检测算法，对测试集的伪造图像进行篡改定位。比赛的难点在于其分割区域是不能依靠边缘轮廓，因为篡改特征是偏向于弱信号特征（不可视的，跟内容特征弱相关），而且相对要分割出来的区域可能面积偏小。<br><img src="https://qiniu.findn.cn/blog/photos/article/Fk-_XfgIrmSXAmGnahiX8GARxPqz" alt="篡改检测比赛"/></p>
-<h2 id="比赛TOP3分享"><a href="#比赛TOP3分享" class="headerlink" title="比赛TOP3分享"></a>比赛TOP3分享</h2><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzU4MzQ4NTk5NQ==&mid=2247492758&idx=1&sn=7a8537b7e23957ea559bf5fd66a88ee0">天池伪造图像的篡改检测比赛TOP3分享</a></p>
+<h3 id="比赛TOP3分享"><a href="#比赛TOP3分享" class="headerlink" title="比赛TOP3分享"></a>比赛TOP3分享</h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzU4MzQ4NTk5NQ==&mid=2247492758&idx=1&sn=7a8537b7e23957ea559bf5fd66a88ee0">天池伪造图像的篡改检测比赛TOP3分享</a></p>
 <p>参考资料：<br>[1]. <a target="_blank" rel="noopener" href="http://blog.sina.com.cn/s/blog_8fde4dbf0101ay5g.html">图像的篡改取证应用前景</a><br>[2]. <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/85030394">PaperReadingGroup-2-篡改检测小综述</a><br>[3]. <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/gdCv4SLsVibolPHQ62Z1dw">图像篡改检测方法总结</a><br>[4]. <a target="_blank" rel="noopener" href="https://www.cnblogs.com/lwp-nicol">梁君牧-cnblog</a></p>
 
 				  
@@ -575,7 +575,7 @@ var _hmt = _hmt || [];
 	
 	<br>
 	<strong class="update-time">最后更新：</strong>
-	2022年08月14日 16:16:50
+	2022年11月22日 11:20:49
 	
 	<!-- <br>
 	<strong class="article-titles">本文标题：</strong>
@@ -726,7 +726,7 @@ var _hmt = _hmt || [];
           <span class="tooltip-content">
 			<span style="font-size: 20px;font-weight: bold;">目录</span>
             <div class="toc-article">
-              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="toc-number">2.</span> <span class="toc-text">数据集</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Related-Work"><span class="toc-number">3.</span> <span class="toc-text">Related Work</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#RGB-N"><span class="toc-number">3.1.</span> <span class="toc-text">RGB-N</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ManTra-Net"><span class="toc-number">3.2.</span> <span class="toc-text">ManTra-Net</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RRU-Net"><span class="toc-number">3.3.</span> <span class="toc-text">RRU-Net</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AF%94%E8%B5%9B"><span class="toc-number">4.</span> <span class="toc-text">比赛</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A9%E6%B1%A0-%E4%BC%AA%E9%80%A0%E5%9B%BE%E5%83%8F%E7%9A%84%E7%AF%A1%E6%94%B9%E6%A3%80%E6%B5%8B-%E9%95%BF%E6%9C%9F%E8%B5%9B"><span class="toc-number">4.1.</span> <span class="toc-text">天池 - 伪造图像的篡改检测 - 长期赛</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AF%94%E8%B5%9BTOP3%E5%88%86%E4%BA%AB"><span class="toc-number">4.2.</span> <span class="toc-text">比赛TOP3分享</span></a></li></ol></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="toc-number">2.</span> <span class="toc-text">数据集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Related-Work"><span class="toc-number">3.</span> <span class="toc-text">Related Work</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#RGB-N"><span class="toc-number">3.1.</span> <span class="toc-text">RGB-N</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ManTra-Net"><span class="toc-number">3.2.</span> <span class="toc-text">ManTra-Net</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RRU-Net"><span class="toc-number">3.3.</span> <span class="toc-text">RRU-Net</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AF%94%E8%B5%9B"><span class="toc-number">4.</span> <span class="toc-text">比赛</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A9%E6%B1%A0-%E4%BC%AA%E9%80%A0%E5%9B%BE%E5%83%8F%E7%9A%84%E7%AF%A1%E6%94%B9%E6%A3%80%E6%B5%8B-%E9%95%BF%E6%9C%9F%E8%B5%9B"><span class="toc-number">4.1.</span> <span class="toc-text">天池 - 伪造图像的篡改检测 - 长期赛</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AF%94%E8%B5%9BTOP3%E5%88%86%E4%BA%AB"><span class="toc-number">4.2.</span> <span class="toc-text">比赛TOP3分享</span></a></li></ol></li></ol>
             </div>
           </span>
         </div>
@@ -826,7 +826,7 @@ var _hmt = _hmt || [];
 		<span> 6 篇</span>
 		<span class="post-meta-divider">|</span>
 		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-		<span> <span class="post-count">32k</span></span>
+		<span> <span class="post-count">32.7k</span></span>
       </div>
 	  
 	  <!-- 添加不蒜子统计 -->
