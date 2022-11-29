@@ -6,7 +6,7 @@
   <link href="https://sanshui.findn.cn/atom.xml" rel="self"/>
   
   <link href="https://sanshui.findn.cn/"/>
-  <updated>2022-11-29T04:30:55.329Z</updated>
+  <updated>2022-11-29T09:43:21.680Z</updated>
   <id>https://sanshui.findn.cn/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://sanshui.findn.cn/post/2e289bf9.html"/>
     <id>https://sanshui.findn.cn/post/2e289bf9.html</id>
     <published>2022-11-28T16:00:00.000Z</published>
-    <updated>2022-11-29T04:30:55.329Z</updated>
+    <updated>2022-11-29T09:43:21.680Z</updated>
     
-    <content type="html"><![CDATA[<img src="https://qiniu.findn.cn//blog/photos/article/findnotes.png" alt="findnotes" style="zoom:80%;" /><p>为了方便个人知识管理，我又建了新的笔记网站——<a href="https://findn.cn/">Find Notes - 三水的笔记</a>，网站主要更新一些学习过程中的笔记：</p><ul><li>算法刷题（Leetcode、代码随想录、剑指Offer）</li><li>前端学习笔记（HTML、CSS、JavaScript、Vue）</li><li>计算机基础知识（Linux、操作系统、计算机网络、设计模式）</li><li>个人项目</li></ul><p>目前的博客<a href="https://sanshui.findn.cn/">三水のBlog</a>后面主要记录一些个人随笔、生活趣事等。</p><span id="more"></span><h1 id="关于博客"><a href="#关于博客" class="headerlink" title="关于博客"></a>关于博客</h1><img src="https://qiniu.findn.cn//blog/photos/article/findnotes-min.svg" alt="findnotes-logo" style="width: 200px;" /><p><code>Find Notes</code>域名为<a href="https://findn.cn/">https://findn.cn/</a>，Repo在<a href="https://github.com/jackhanyuan/Find-CS-Notes">这里</a>，网站名称主要是根据域名Findn联想到的，logo左边F是Find的缩写，右边的笔代表着笔记，希望每个人都可以在三水的笔记里找到学习CS的乐趣！</p><p>博客使用<a href="https://github.com/vuepress/vuepress-next">VuePress V2</a>建站，使用的主题是<a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope">vuepress-theme-hope</a>，支持<a href="https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps">PWA</a>，可以在Chrome浏览器地址栏安装为App、在Safari浏览器中添加到主屏幕，实现离线使用。</p>]]></content>
+    <content type="html"><![CDATA[<img src="https://qiniu.findn.cn//blog/photos/article/findnotes.png" alt="findnotes" style="zoom:80%;" /><p>为了方便个人知识管理，我又建了新的笔记网站——<a href="https://findn.cn/">Find Notes - 三水的笔记</a>，网站主要更新一些学习过程中的笔记：</p><ul><li>算法刷题（Leetcode、代码随想录、剑指Offer）</li><li>前端学习笔记（HTML、CSS、JavaScript、Vue）</li><li>计算机基础知识（Linux、操作系统、计算机网络、设计模式）</li><li>个人项目</li></ul><p>目前的博客<a href="https://sanshui.findn.cn/">三水のBlog</a>后面主要记录一些个人随笔、生活趣事等。</p><span id="more"></span><h1 id="关于博客"><a href="#关于博客" class="headerlink" title="关于博客"></a>关于博客</h1><img src="https://qiniu.findn.cn//blog/photos/article/findnotes-min.svg" alt="findnotes-logo" style="width: 200px;" /><p><code>Find Notes</code>域名为<a href="https://findn.cn/">https://findn.cn/</a>，Repo在<a href="https://github.com/jackhanyuan/Find-CS-Notes">这里</a>，网站名称主要是根据域名Findn联想到的，logo左边F是Find的缩写，右边的笔代表着笔记，希望每个人都可以在三水的笔记里找到学习CS的乐趣！</p><p>博客使用<a href="https://github.com/vuepress/vuepress-next">VuePress V2</a>建站，使用的主题是<a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope">vuepress-theme-hope</a>，支持<a href="https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps">PWA</a>，缓存安装后可离线使用。安装的方法因浏览器不同而不同，如 PC 版本 Chrome 或 Edge 浏览器直接点击地址栏右侧的<code>安装Find Notes</code>即可，在 iOS Safari 中，点击下方<code>共享</code>按钮，再点击<code>添加至主屏幕</code>；Android Chrome/Firefox 中，点击右上角<code>菜单</code>按钮，再点击<code>添加至主屏幕</code>或<code>安装</code>。</p>]]></content>
     
     
     <summary type="html">&lt;img src=&quot;https://qiniu.findn.cn//blog/photos/article/findnotes.png&quot; alt=&quot;findnotes&quot; style=&quot;zoom:80%;&quot; /&gt;
