@@ -202,7 +202,7 @@ baidu_url_submit:
 deploy:
 - type: 'git'
   repo: git@github.com:jackhanyuan/jackhanyuan.github.io.git  #这里写github ssh地址, 不要写https地址
-  branch: main
+  branch: gh-pages
   # 发布时，同时进行百度推送
 - type: baidu_url_submitter
 

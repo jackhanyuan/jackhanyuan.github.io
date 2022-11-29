@@ -3,6 +3,8 @@
 title: {{ title }}
 # 日期
 date: {{ date }}
+# 文章更新时间
+updated: {{ date }}
 # 置顶 数字越大 高位置顶
 top:
 # 标签
