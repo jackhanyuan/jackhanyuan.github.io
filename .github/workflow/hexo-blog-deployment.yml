@@ -1,0 +1,38 @@
+# 文件路径 .github/workflows/deployment.yml
+name: Deployment
+
+on:
+  push:
+    branches: [hexo] # only push events on source branch trigger deployment
+
+jobs:
+  hexo-deployment:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v3
+      with:
+        submodules: true
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+
+    - name: Install dependencies & Generate static files
+      run: |
+        node -v
+        npm i -g hexo-cli
+        npm i
+        hexo clean
+        hexo g
+        
+    - name: Deploy to Github Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        # Deploy branch name
+        branch: gh-pages
+        folder: ./public
