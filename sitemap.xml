@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sanshui.findn.cn/photos/video.html</loc>
+    
+    <lastmod>2022-11-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sanshui.findn.cn/archives/index.html</loc>
     
     <lastmod>2022-11-30</lastmod>
@@ -47,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://sanshui.findn.cn/photos/video.html</loc>
+    <loc>https://sanshui.findn.cn/post/cb72f2a0.html</loc>
     
     <lastmod>2022-11-30</lastmod>
     
@@ -171,6 +180,13 @@
   
   <url>
     <loc>https://sanshui.findn.cn/tags/%E4%B8%89%E6%B0%B4/</loc>
+    <lastmod>2022-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sanshui.findn.cn/tags/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2022-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
