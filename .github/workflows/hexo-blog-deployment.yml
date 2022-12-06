@@ -28,6 +28,7 @@ jobs:
         npm i
         hexo clean
         hexo g
+        > ./public/.nojekyll
         
     - name: Deploy to Github Pages
       uses: JamesIves/github-pages-deploy-action@v4
