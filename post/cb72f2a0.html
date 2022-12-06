@@ -39,18 +39,6 @@
       background: linear-gradient(55deg,#88ACDB,#49B1F5,#9534f1,#49b1f5);
     }
   </style>
-
-  <style type="text/css">
-    html {
-      -webkit-filter: grayscale(100%); /* webkit */
-      -moz-filter: grayscale(100%); /*firefox*/
-      -ms-filter: grayscale(100%); /*ie9*/
-      -o-filter: grayscale(100%); /*opera*/
-      filter: grayscale(100%);
-      filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
-      filter:gray; /*ie9- */
-    }
-  </style>
     
   <!-- 引入font-awesome图标库 -->
   <!-- <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> -->
@@ -427,7 +415,6 @@ var _hmt = _hmt || [];
 
 <p>针对VuePress建站的网站，我们可以直接更改<code>.vuepress/styles/index.scss</code>文件，在该文件中放入以下代码：</p>
 <figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">  -webkit-<span class="attribute">filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>); <span class="comment">/* webkit */</span></span><br><span class="line">  -moz-<span class="attribute">filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>); <span class="comment">/*firefox*/</span></span><br><span class="line">  -ms-<span class="attribute">filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>); <span class="comment">/*ie9*/</span></span><br><span class="line">  -o-<span class="attribute">filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>); <span class="comment">/*opera*/</span></span><br><span class="line">  <span class="attribute">filter</span>: <span class="built_in">grayscale</span>(<span class="number">100%</span>);</span><br><span class="line">  <span class="attribute">filter</span>:progid:DXImageTransform.Microsoft.<span class="built_in">BasicImage</span>(grayscale=<span class="number">1</span>);</span><br><span class="line">  <span class="attribute">filter</span>:gray; <span class="comment">/*ie9- */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 
 				  
 	  
