@@ -12,12 +12,11 @@ updated: 2022-11-29 17:43:21
 top: 2
 ---
 
-<img src="https://qiniu.findn.cn//blog/photos/article/findnotes.png" alt="findnotes" style="zoom:80%;" />
+<img src="https://qiniu.findn.cn//blog/photos/article/findnotes.png" alt="findnotes" style="zoom:60%;" />
 
 为了方便个人知识管理，我又建了新的笔记网站——[Find Notes - 三水的笔记](https://findn.cn/)，网站主要更新一些学习过程中的笔记：
 
 - 算法刷题（Leetcode、代码随想录、剑指Offer）
-- 前端学习笔记（HTML、CSS、JavaScript、Vue）
 - 计算机基础知识（Linux、操作系统、计算机网络、设计模式）
 - 个人项目
 
