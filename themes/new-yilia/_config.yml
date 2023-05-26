@@ -244,6 +244,7 @@ footer:
   create_time: '10/01/2021 00:00:00'
   create_year: '2021'
   icp: '陕ICP备2020013777号-1'
+  theme_info: true
   youpaiyun: true
 
 
