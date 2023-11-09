@@ -4,26 +4,22 @@ author: '三水のBlog'
 
 
 # 头像url
-#avatar: '/img/avatar.png'
+# avatar: '/img/avatar.png'
 avatar: 'https://qiniu.findn.cn/blog/photos/static/sanshui.png'
 # 头像是否旋转
 avatarrotation: true
 # 网站图标
-favicon: '/img/favicon.ico'
-# 是否需要修改 root 路径
-# 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
-# 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
-root: /
+favicon: 'img/favicon.ico'
 
 
 # left-col侧栏
 menu:
   主页: /
-  归档: /archives/index.html
-  分类: /categories/index.html
+  归档: archives/index.html
+  分类: categories/index.html
   笔记: https://findn.cn/
-  相册: /photos/index.html
-  音乐: /music/index.html
+  相册: photos/index.html
+  音乐: music/index.html
   
 # SubNav
 subnav:
@@ -39,7 +35,7 @@ subnav:
   #segmentfault: "#"
   bilibili: "https://space.bilibili.com/47219441"
   #acfun: "#"
-  rss: "/atom.xml"
+  rss: "atom.xml"
   mail: "mailto:jackhanyuan@foxmail.com"
   #facebook: "#"
   #google: "#"
@@ -162,10 +158,10 @@ reward:
   # 打赏wording
   wording: '感觉不错 支持一下'
   # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-  # alipay: '/img/alipay.png'
+  # alipay: 'img/alipay.png'
   alipay: 'https://qiniu.findn.cn/blog/photos/static/alipay-min.png'
   # 微信二维码图片地址
-  # weixin: '/img/wechatpay.png'
+  # weixin: 'img/wechatpay.png'
   weixin: 'https://qiniu.findn.cn/blog/photos/static/wechatpay-min.png'
 
 # 目录
