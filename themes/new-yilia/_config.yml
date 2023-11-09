@@ -4,7 +4,7 @@ author: '三水のBlog'
 
 
 # 头像url
-# avatar: '/img/avatar.png'
+# avatar: 'img/avatar.png'
 avatar: 'https://qiniu.findn.cn/blog/photos/static/sanshui.png'
 # 头像是否旋转
 avatarrotation: true
