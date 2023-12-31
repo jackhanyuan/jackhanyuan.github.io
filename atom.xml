@@ -6,7 +6,7 @@
   <link href="https://sanshui.findn.cn/atom.xml" rel="self"/>
   
   <link href="https://sanshui.findn.cn/"/>
-  <updated>2022-11-30T13:30:46.000Z</updated>
+  <updated>2023-12-31T12:21:58.000Z</updated>
   <id>https://sanshui.findn.cn/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>三水的2023总结</title>
+    <link href="https://sanshui.findn.cn/post/a1604796.html"/>
+    <id>https://sanshui.findn.cn/post/a1604796.html</id>
+    <published>2023-12-31T12:21:58.000Z</published>
+    <updated>2023-12-31T12:21:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<img src="https://qiniu.findn.cn//blog/photos/article/2023_summary.jpg" alt="findnotes" style="zoom:60%;" /><p>2023就要结束了，回过头来才发现今年一篇博客都没有写，那就让这篇总结为逝去的2023画上一个圆满的句号吧。</p><p>祝愿所有关心我的人2024幸运与快乐✨🎉</p><span id="more"></span><p>2023非常不易，但关关难过关关过。我心情就行过山车一样，经历了找工作时的奔溃与无助、申博过程的焦虑与漫长等待、毕业季的忙忙碌碌，好在一直有她（@清荷）的支持，陪我度过了刻骨铭心的2023。</p><p>2022的下半年，我就一直为申博的事准备，同组的同学也都开始了秋招，没想到2023秋招难到了冰点，一份份简历石沉大海，一轮又一轮无效的面试让大家身心俱疲，所有人都憋着一口气。进入11月，终于陆陆续续传来了好消息。</p><p>最后，我想说轻舟已过万重山，希望我们2024一切顺利！</p>]]></content>
+    
+    
+    <summary type="html">&lt;img src=&quot;https://qiniu.findn.cn//blog/photos/article/2023_summary.jpg&quot; alt=&quot;findnotes&quot; style=&quot;zoom:60%;&quot; /&gt;
+
+&lt;p&gt;2023就要结束了，回过头来才发现今年一篇博客都没有写，那就让这篇总结为逝去的2023画上一个圆满的句号吧。&lt;/p&gt;
+&lt;p&gt;祝愿所有关心我的人2024幸运与快乐✨🎉&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://sanshui.findn.cn/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="总结" scheme="https://sanshui.findn.cn/categories/%E7%94%9F%E6%B4%BB/%E6%80%BB%E7%BB%93/"/>
+    
+    
+    <category term="三水" scheme="https://sanshui.findn.cn/tags/%E4%B8%89%E6%B0%B4/"/>
+    
+    <category term="总结" scheme="https://sanshui.findn.cn/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS代码实现网站全站变灰</title>
