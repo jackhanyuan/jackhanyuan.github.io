@@ -387,7 +387,7 @@ var _hmt = _hmt || [];
 		  
 			<p>近期，服务器异常，通过<code>htop</code>或<code>top</code>命令查看CPU占用前几的进程，发现<code>root</code>用户的<code>-bash</code>进程把CPU一半的核占满，而另一台服务器上<code>x</code>用户（被新创建的用户）和一个<code>普通用户</code>CPU占用也异常。</p>
 <p><code>kill -9 进程号</code>杀掉进程后立马又启动了新进程，<code>ll /proc/进程号</code>查看PID目录，可以看到exe指向了一个被删除了的-bash进程(&#x2F;usr&#x2F;bin&#x2F;-bash)，使用 <code>netstat -anp|grep ESTABLISHED</code> 查看State为<code>ESTABLISHED</code>的网络连接，发现有异常外网连接，这应该就是<code>-bash</code>病毒木马了。</p>
-<p><img src="https://i-blog.csdnimg.cn/direct/8df62fd57d1f40a5917c387c7240a383.png" alt="htop查看进程 CPU异常"></p>
+<p><img src="https://qiniu.findn.cn//blog/photos/article/20241009222539.png" alt="htop查看进程 CPU异常"></p>
 		  
 				  
 	  
